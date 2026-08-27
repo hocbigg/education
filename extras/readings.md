@@ -2,8 +2,6 @@
 
 This curated collection brings together field-defining books, seminal essays, and landmark monographs that have fundamentally shaped educational philosophy, cognitive science, critical pedagogy, and institutional reform. These works offer transformative insights into how learners think, how teachers practice artistry, and how educational systems reproduce or challenge societal structures.
 
----
-
 ## Philosophical Foundations & Educational Aims
 
 | Title | Author(s) | Type | Why It's Worth Reading |
@@ -12,8 +10,6 @@ This curated collection brings together field-defining books, seminal essays, an
 | [*Emile, or On Education*](https://archive.org/details/emileoreducation00rousrich) | Jean-Jacques Rousseau | Classic Treatise | The foundational work of romantic naturalism in education, asserting that learning should follow natural developmental stages and protect innate human goodness from societal corruption. |
 | [*The Republic* (Allegory of the Cave, Books VI–VII)](https://archive.org/details/platorepublic00plat) | Plato | Classical Dialogue | Introduces the foundational Western philosophical metaphor of education as an arduous, transformative turning of the soul from shadows and illusion toward truth and the Good. |
 | [*Caring: A Relational Approach to Ethics and Moral Education*](https://archive.org/details/caringrelational0000nodd) | Nel Noddings | Philosophical Monograph | Replaces traditional rule-based moral education with a feminist ethic of care, framing pedagogical success around receptive attention, empathy, and reciprocal teacher-student relations. |
-
----
 
 ## Cognition, Development & The Science of Learning
 
@@ -24,8 +20,6 @@ This curated collection brings together field-defining books, seminal essays, an
 | [*The Origins of Intelligence in Children*](https://archive.org/details/originsofintelli0000piag) | Jean Piaget | Empirical Monograph | The foundational observational treatise on genetic epistemology, detailing how children actively construct cognitive schemas through assimilation, accommodation, and physical exploration. |
 | *The 2 Sigma Problem: The Search for Methods of Group Instruction as Effective as One-to-One Tutoring* | Benjamin S. Bloom | Landmark Empirical Paper | Demonstrates empirically that one-on-one mastery tutoring produces a two-standard-deviation gain in student achievement, sparking decades of research into adaptive and formative instruction. |
 
----
-
 ## Critical Pedagogy, Equity & Social Transformation
 
 | Title | Author(s) | Type | Why It's Worth Reading |
@@ -35,8 +29,6 @@ This curated collection brings together field-defining books, seminal essays, an
 | [*Schooling in Capitalist America: Educational Reform and the Contradictions of Economic Life*](https://archive.org/details/schoolingincapit0000bowl) | Samuel Bowles and Herbert Gintis | Landmark Monograph | Formulates the correspondence principle, providing a Marxist sociological critique of how structural school hierarchies mirror workplace inequalities to reproduce economic class stratification. |
 | [*Subtractive Schooling: U.S.-Mexican Youth and the Politics of Caring*](https://archive.org/details/subtractiveschoo0000vale) | Angela Valenzuela | Ethnographic Monograph | An ethnographic study showing how assimilationist school policies systematically divest immigrant youth of their cultural and linguistic assets rather than leveraging them as educational foundations. |
 
----
-
 ## Curriculum, Teaching & Reflective Practice
 
 | Title | Author(s) | Type | Why It's Worth Reading |
@@ -45,8 +37,6 @@ This curated collection brings together field-defining books, seminal essays, an
 | [*The Courage to Teach: Exploring the Inner Landscape of a Teacher's Life*](https://archive.org/details/couragetoteachex00palm) | Parker J. Palmer | Monograph | Examines the inner emotional and spiritual life of educators, showing that good teaching cannot be reduced to pedagogical technique but depends on the undivided integrity of the teacher's selfhood. |
 | [*Life in Classrooms*](https://archive.org/details/lifeinclassrooms0000jack) | Philip W. Jackson | Landmark Monograph | Coined the term hidden curriculum, offering a pioneering ethnographic analysis of how crowds, praise, and institutional power dynamics shape daily classroom experiences. |
 | [*Inside/Outside: Teacher Research and Knowledge*](https://archive.org/details/insideoutsidetea0000coch) | Marilyn Cochran-Smith and Susan L. Lytle | Methodological Monograph | Redefines classroom teachers as legitimate knowledge creators, arguing that systematic practitioner inquiry is crucial for democratizing curriculum design and school reform. |
-
----
 
 ## Systemic Policy, Schooling & Institutional Change
 
