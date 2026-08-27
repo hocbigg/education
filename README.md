@@ -53,29 +53,17 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
 
 # Curriculum
 
-## How to use this curriculum
-
-### Core Sections
-
-Everyone should complete these four sections in sequence to build a solid, well-rounded understanding of the field:
-
-**Foundations of Education**: Start here. These early sections introduce the basic ideas, background, and ways of thinking about education as a discipline.
-
-**Learning, Development, and Teaching**: Move to this next. It builds directly on the foundations by explaining how learning happens, how people grow, and how effective teaching works in practice.
-
-**Curriculum, Assessment, and Inclusion**: Take this third. It connects the previous material to real classroom decisions: planning what to teach, checking what students have learned, and making sure everyone can participate.
-
-**Society, Policy, and Systems**: Complete this fourth. It places everything in a wider context by showing how schools connect to society, laws, and larger systems.
-
-Finish these four sections in the listed order before moving on. They give you the essential knowledge and concepts needed to understand education coherently (before moving to [Advanced Topics](advanced_topics.md)).
+# Curriculum
 
 ## Foundations of Education
+
+These early sections introduce the basic ideas, background, and ways of thinking about education as a discipline.
 
 ### Education as a Field
 
 | Subject | Why study? | Book / Text | Online Resource |
 | --- | --- | --- | --- |
-| Introduction to Education Studies | It gives you a clear overview of how education works as a field. You learn key concepts and major areas without needing any prior knowledge. This helps you build a strong base for deeper study. | [*An Introduction to Education Studies*](https://archive.org/details/introductiontoed0000bart) | [MIT OCW – Introduction to Education](https://ocw.mit.edu/courses/11-125-introduction-to-education-understanding-and-evaluating-education-spring-2009/) |
+| Introduction to Education Studies | It gives you a clear overview of how education works as a field. You learn key concepts and major areas without needing any prior knowledge. This helps you build a strong base for deeper study. | [*An Introduction to Education Studies*](https://archive.org/details/introductiontoed0000bart) by Steve Bartlett and Diana Burton | [MIT OCW – Introduction to Education](https://ocw.mit.edu/courses/11-125-introduction-to-education-understanding-and-evaluating-education-spring-2009/) |
 | Philosophy of Education | It helps you examine the purposes and values behind teaching and learning. You develop skills to think critically about what makes education meaningful. This builds your ability to make thoughtful decisions as an educator. | [*Philosophy of Education* by Nel Noddings](https://archive.org/details/philosophyofeduc0000nodd) | [Open Yale – Philosophy and the Science of Human Nature](https://oyc.yale.edu/philosophy/phil-181) |
 | History of Education | It shows how past ideas, systems, and events shaped today's schools. You gain perspective to avoid repeating old mistakes and improve current practices. This helps you understand why education is the way it is now. | [*A History of Western Education* by James Bowen](https://archive.org/details/historyofwestern0000bowe_h0l6) | [MIT OCW – Introduction to Education](https://ocw.mit.edu/courses/11-125-introduction-to-education-understanding-and-evaluating-education-spring-2009/) |
 
@@ -83,53 +71,53 @@ Finish these four sections in the listed order before moving on. They give you t
 
 | Subject | Why study? | Book / Text | Online Resource |
 | --- | --- | --- | --- |
-| Academic Reading & Writing | It teaches you how to read complex texts carefully and write clear, evidence-based arguments. You build skills to think critically and communicate ideas effectively. These abilities support success in all education studies and teaching. | [*The Craft of Research*](https://archive.org/details/craftofresearch0000boot) | [MIT OCW – Crafting Research Questions](https://ocw.mit.edu/courses/11-233-crafting-research-questions-and-qualitative-methodology-fall-2005/) |
+| Educational Research and Inquiry | It teaches you how to read empirical educational research, understand quantitative and qualitative methodologies, and design action-research investigations. These abilities enable you to make evidence-based pedagogical decisions. | *Educational Research: Competencies for Analysis and Applications* by L. R. Gay, Geoffrey E. Mills, and Peter Airasian; [*The Craft of Research*](https://archive.org/details/craftofresearch0000boot) | [MIT OCW – Crafting Research Questions](https://ocw.mit.edu/courses/11-233-crafting-research-questions-and-qualitative-methodology-fall-2005/) |
 
 ## Learning, Development, and Teaching
+
+This section builds directly on the foundations by explaining how learning happens, how people grow, and how effective teaching works in practice.
 
 ### Learning Sciences
 
 | Subject | Why study? | Book / Text | Online Resource |
 | --- | --- | --- | --- |
-| Educational Psychology | It explains how students think, feel, and behave while learning. You learn to use proven strategies that match different learning needs and styles. This makes you better at helping students succeed in the classroom. | [*How Learning Works* by Ambrose et al.](https://www.cmu.edu/teaching/designteach/design/instructionalstrategies.html) (CMU resources & principles; book widely recommended) | [Modern States – Introduction to Educational Psychology](https://modernstates.org/course/introduction-to-educational-psychology) (free, self-paced, CLEP-aligned) |
-| Human Development | It covers how people grow physically, emotionally, and cognitively from childhood to adulthood. You gain knowledge to support learners at different life stages. This helps you create age-appropriate teaching and activities. | [*Development Through the Lifespan* by Laura Berk](https://archive.org/details/developmentthrou0000berk_n3u1) | [Open University – Lifespan Development](https://www.open.edu/openlearn/health-sports-psychology/psychology/childhood-youth/introduction-child-psychology/content-section-0) |
+| Educational Psychology | It explains how students think, feel, and behave while learning. You learn foundational cognitive, behavioral, and constructivist principles that match diverse learning needs. This empowers you to optimize retention and motivation. | *Educational Psychology* by Anita Woolfolk; [*How Learning Works* by Ambrose et al.](https://www.cmu.edu/teaching/designteach/design/instructionalstrategies.html) | [Modern States – Introduction to Educational Psychology](https://modernstates.org/course/introduction-to-educational-psychology) |
+| Human Development | It covers how people grow physically, emotionally, and cognitively from childhood to adulthood. You gain knowledge to support learners at different life stages. This helps you create age-appropriate teaching and activities. | [*Development Through the Lifespan* by Laura Berk](https://archive.org/details/developmentthrou0000berk_n3u1) | [OpenLearn – Introduction to Child Psychology](https://www.open.edu/openlearn/health-sports-psychology/psychology/childhood-youth/introduction-child-psychology/content-section-0) |
 
 ### How Teaching Works
 
 | Subject | Why study? | Book / Text | Online Resource |
 | --- | --- | --- | --- |
-| Pedagogy & Teaching Models | It reveals the science behind how people actually learn best. You discover practical ways to design lessons that engage and retain knowledge. This improves your ability to teach effectively in real classrooms. | [*How Learning Works* by Ambrose et al.](https://www.cmu.edu/teaching/designteach/design/instructionalstrategies.html) | [Carnegie Mellon Eberly Center](https://www.cmu.edu/teaching/) |
-| Instructional Methods | It gives you tools and techniques for delivering lessons successfully. You learn various approaches to present content and guide student practice. This builds your confidence to adapt teaching to different situations. | General pedagogy resources (various) | [MIT OCW – Education lectures](https://ocw.mit.edu/search/?d=Urban%20Studies%20and%20Planning&t=Education) |
-| Classroom Interaction | It teaches ways to encourage meaningful talk and discussion among students. You develop skills to create classrooms where everyone participates and thinks deeply. This supports better learning through dialogue and collaboration. | [EEF – Dialogic Teaching](https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/dialogic-teaching) | General university education resources |
+| Pedagogy & Teaching Models | It presents core research-based models of instruction, such as direct instruction, inquiry-based learning, and cooperative structures. You learn how to select and apply the right instructional model for specific learning goals. | *Models of Teaching* by Bruce Joyce, Marsha Weil, and Emily Calhoun | [Carnegie Mellon Eberly Center – Teaching Principles](https://www.cmu.edu/teaching/) |
+| Instructional Methods & Design | It gives you practical frameworks for planning lessons, structuring activities, and aligning learning objectives with teaching strategies. This builds your ability to deliver coherent, goal-oriented instruction. | *Effective Teaching Methods: Research-Based Practice* by Gary D. Borich | [OpenLearn – Free Education and Teaching Courses](https://www.open.edu/openlearn/) |
+| Classroom Management & Learning Environments | It equips you with proactive strategies to establish positive classroom culture, routines, and behavior support systems. This ensures a safe, respectful, and productive learning environment for all students. | *Classroom Management for Middle and High School Teachers* by Edmund T. Emmer and Carolyn M. Evertson | [EEF – Teaching and Learning Toolkit](https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit) |
 
 ## Curriculum, Assessment, and Inclusion
+
+Connecting the previous material to real classroom decisions: planning what to teach, checking what students have learned, and making sure everyone can participate.
 
 ### Curriculum and Instruction
 
 | Subject | Why study? | Book / Text | Online Resource |
 | --- | --- | --- | --- |
-| Curriculum Theory | It helps you understand how curricula are planned and why certain content is chosen. You learn to connect theory with practical classroom decisions. This allows you to design or improve educational programs thoughtfully. | [*Curriculum: From Theory to Practice* by Wesley Null](https://us.sagepub.com/en-us/nam/curriculum/book258877) | [MIT OCW – Education](https://ocw.mit.edu/search/?d=Urban%20Studies%20and%20Planning&t=Education) |
-| Assessment Foundations | It shows how to measure student learning fairly and accurately. You gain skills to create tests and tasks that check real understanding. This helps you give useful feedback and adjust teaching when needed. | [*Classroom Assessment* by Susan Brookhart](https://us.sagepub.com/en-us/nam/classroom-assessment/book258878) | [MIT OCW – Introduction to Education](https://ocw.mit.edu/courses/11-125-introduction-to-education-understanding-and-evaluating-education-spring-2009/) |
+| Curriculum Theory | It helps you understand how curricula are planned, designed, and evaluated. You learn backward design and curriculum models to connect overarching educational aims with day-to-day instructional planning. | [*Curriculum: From Theory to Practice* by Wesley Null](https://us.sagepub.com/en-us/nam/curriculum/book258877); *Understanding by Design* by Grant Wiggins and Jay McTighe | [UNESCO – International Bureau of Education Resources](https://unesdoc.unesco.org/) |
+| Assessment Foundations | It shows how to design valid, reliable formative and summative assessments. You gain skills to construct rubrics, evaluate student understanding fairly, and use diagnostic data to guide subsequent instruction. | *Classroom Assessment: What Teachers Need to Know* by W. James Popham | [OpenLearn – Assessment in Education](https://www.open.edu/openlearn/) |
 
 ### Inclusion and Learners
 
 | Subject | Why study? | Book / Text | Online Resource |
 | --- | --- | --- | --- |
-| Inclusive & Special Education | It teaches how to support every learner, including those with disabilities. You learn strategies to make classrooms fair and accessible for all. This builds your ability to create equitable learning environments. | [UNESCO – *Inclusion and Equity in Education*](https://unesdoc.unesco.org/ark:/48223/pf0000374447) | [UNESCO IIEP](https://www.iiep.unesco.org/en) |
+| Inclusive & Special Education | It teaches how to support learners with disabilities, neurodivergent students, and diverse learning profiles. You learn differentiated instruction, accommodations, and legal individualized education frameworks. | *Including Students with Special Needs: A Practical Guide for Classroom Teachers* by Marilyn Friend and William D. Bursuck; [UNESCO – *Inclusion and Equity in Education*](https://unesdoc.unesco.org/ark:/48223/pf0000374447) | [Vanderbilt University IRIS Center – Inclusive Education Modules](https://iris.peabody.vanderbilt.edu/) |
 
 ## Society, Policy, and Systems
 
+This section places everything in a wider context by showing how schools connect to society, laws, and larger systems.
+
 | Subject | Why study? | Book / Text | Online Resource |
 | --- | --- | --- | --- |
-| Sociology of Education | It examines how society and culture shape schools and learning. You understand factors like inequality and social influences on education. This helps you address real-world challenges in teaching. | [OpenLearn – *Education, Childhood and Society*](https://www.open.edu/openlearn/education-development/education-childhood-and-society) | [Open University](https://www.open.edu/openlearn/) |
-| Comparative Education | It compares education systems across different countries. You gain insights into what works well elsewhere and why. This broadens your perspective to improve local practices. | General comparative resources | [UNESCO Comparative Education](https://unesdoc.unesco.org/) |
-| Education Policy & Law | It covers rules, laws, and policies that guide schools. You learn how decisions at higher levels affect classrooms. This prepares you to navigate and influence educational systems. | General policy resources | [Harvard Ed Policy Lectures](https://www.gse.harvard.edu/ideas/usable-knowledge) |
-
-## Congratulations
-
-After completing the requirements of the curriculum above,
-you will have completed the equivalent of a full bachelor's degree in Education.
-Congratulations!
+| Sociology of Education | It examines how social institutions, culture, class, and inequality shape schooling and learning outcomes. This sociological perspective helps educators navigate and dismantle structural barriers to student success. | *The Sociology of Education: A Systematic Analysis* by Jeanne H. Ballantine, Joan Z. Spade, and Jenny M. Stuber | [OpenLearn – Education and Development](https://www.open.edu/openlearn/) |
+| Comparative Education | It examines and contrasts national education systems around the world. You gain insights into global education policies, cross-national benchmarks, and alternative models of schooling to inform domestic practice. | *Comparative and International Education: An Introduction to Theory, Method, and Practice* by David Phillips and Michele Schweisfurth | [UNESCO Open Access Repository](https://unesdoc.unesco.org/) |
+| Education Policy & Law | It covers the statutes, court decisions, ethics, and governance policies regulating schools. You learn about teacher rights and responsibilities, student rights, and equity law to navigate educational systems professionally. | *Teachers and the Law* by David Schimmel, Louis Fischer, Leslie R. Stellman, and Cynthia K. Conlon | [Harvard GSE – Usable Knowledge](https://www.gse.harvard.edu/ideas/usable-knowledge) |
 
 # Code of conduct
 
