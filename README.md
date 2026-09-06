@@ -88,9 +88,9 @@ This section builds directly on the foundations by explaining how learning happe
 
 | Subject | Why study? | Book / Text | Online Resource |
 | --- | --- | --- | --- |
-| Pedagogy & Teaching Models | It presents core research-based models of instruction, such as direct instruction, inquiry-based learning, and cooperative structures. You learn how to select and apply the right instructional model for specific learning goals. | *Models of Teaching* by Bruce Joyce, Marsha Weil, and Emily Calhoun | [Carnegie Mellon Eberly Center – Teaching Principles](https://www.cmu.edu/teaching/) |
-| Instructional Methods & Design | It gives you practical frameworks for planning lessons, structuring activities, and aligning learning objectives with teaching strategies. This builds your ability to deliver coherent, goal-oriented instruction. | *Effective Teaching Methods: Research-Based Practice* by Gary D. Borich | [OpenLearn – Free Education and Teaching Courses](https://www.open.edu/openlearn/) |
-| Classroom Management & Learning Environments | It equips you with proactive strategies to establish positive classroom culture, routines, and behavior support systems. This ensures a safe, respectful, and productive learning environment for all students. | *Classroom Management for Middle and High School Teachers* by Edmund T. Emmer and Carolyn M. Evertson | [EEF – Teaching and Learning Toolkit](https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit) |
+| Pedagogy & Teaching Models | It presents core research-based models of instruction, such as direct instruction, inquiry-based learning, and cooperative structures. You learn how to select and apply the right instructional model for specific learning goals. | *[Models of Teaching](https://books.google.com/books?isbn=9780133749304)* by Bruce Joyce, Marsha Weil, and Emily Calhoun | [Carnegie Mellon Eberly Center – Teaching Principles](https://www.cmu.edu/teaching/) |
+| Instructional Methods & Design | It gives you practical frameworks for planning lessons, structuring activities, and aligning learning objectives with teaching strategies. This builds your ability to deliver coherent, goal-oriented instruction. | *[Effective Teaching Methods: Research-Based Practice](https://books.google.com/books?isbn=9780132849609)* by Gary D. Borich | [OpenLearn – Free Education and Teaching Courses](https://www.open.edu/openlearn/) |
+| Classroom Management & Learning Environments | It equips you with proactive strategies to establish positive classroom culture, routines, and behavior support systems. This ensures a safe, respectful, and productive learning environment for all students. | *[Classroom Management for Middle and High School Teachers](https://books.google.com/books?isbn=9780134028859)* by Edmund T. Emmer and Carolyn M. Evertson | [EEF – Teaching and Learning Toolkit](https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit) |
 
 ## Curriculum, Assessment, and Inclusion
 
@@ -101,7 +101,7 @@ Connecting the previous material to real classroom decisions: planning what to t
 | Subject | Why study? | Book / Text | Online Resource |
 | --- | --- | --- | --- |
 | Curriculum Theory | It helps you understand how curricula are planned, designed, and evaluated. You learn backward design and curriculum models to connect overarching educational aims with day-to-day instructional planning. | [*Curriculum: From Theory to Practice* by Wesley Null](https://us.sagepub.com/en-us/nam/curriculum/book258877); *Understanding by Design* by Grant Wiggins and Jay McTighe | [UNESCO – International Bureau of Education Resources](https://unesdoc.unesco.org/) |
-| Assessment Foundations | It shows how to design valid, reliable formative and summative assessments. You gain skills to construct rubrics, evaluate student understanding fairly, and use diagnostic data to guide subsequent instruction. | *Classroom Assessment: What Teachers Need to Know* by W. James Popham | [OpenLearn – Assessment in Education](https://www.open.edu/openlearn/) |
+| Assessment Foundations | It shows how to design valid, reliable formative and summative assessments. You gain skills to construct rubrics, evaluate student understanding fairly, and use diagnostic data to guide subsequent instruction. | *[Classroom Assessment: What Teachers Need to Know](https://books.google.com/books?isbn=9780132868600)* by W. James Popham | [OpenLearn – Assessment in Education](https://www.open.edu/openlearn/) |
 
 ### Inclusion and Learners
 
@@ -115,13 +115,11 @@ This section places everything in a wider context by showing how schools connect
 
 | Subject | Why study? | Book / Text | Online Resource |
 | --- | --- | --- | --- |
-| Sociology of Education | It examines how social institutions, culture, class, and inequality shape schooling and learning outcomes. This sociological perspective helps educators navigate and dismantle structural barriers to student success. | *The Sociology of Education: A Systematic Analysis* by Jeanne H. Ballantine, Joan Z. Spade, and Jenny M. Stuber | [OpenLearn – Education and Development](https://www.open.edu/openlearn/) |
-| Comparative Education | It examines and contrasts national education systems around the world. You gain insights into global education policies, cross-national benchmarks, and alternative models of schooling to inform domestic practice. | *Comparative and International Education: An Introduction to Theory, Method, and Practice* by David Phillips and Michele Schweisfurth | [UNESCO Open Access Repository](https://unesdoc.unesco.org/) |
-| Education Policy & Law | It covers the statutes, court decisions, ethics, and governance policies regulating schools. You learn about teacher rights and responsibilities, student rights, and equity law to navigate educational systems professionally. | *Teachers and the Law* by David Schimmel, Louis Fischer, Leslie R. Stellman, and Cynthia K. Conlon | [Harvard GSE – Usable Knowledge](https://www.gse.harvard.edu/ideas/usable-knowledge) |
+| Sociology of Education | It examines how social institutions, culture, class, and inequality shape schooling and learning outcomes. This sociological perspective helps educators navigate and dismantle structural barriers to student success. | *[The Sociology of Education: A Systematic Analysis](https://books.google.com/books?isbn=9781138237360)* by Jeanne H. Ballantine, Joan Z. Spade, and Jenny M. Stuber | [OpenLearn – Education and Development](https://www.open.edu/openlearn/) |
+| Comparative Education | It examines and contrasts national education systems around the world. You gain insights into global education policies, cross-national benchmarks, and alternative models of schooling to inform domestic practice. | *[Comparative and International Education: An Introduction to Theory, Method, and Practice](https://archive.org/details/comparativeinter0000phil)* by David Phillips and Michele Schweisfurth | [UNESCO Open Access Repository](https://unesdoc.unesco.org/) |
+| Education Policy & Law | It covers the statutes, court decisions, ethics, and governance policies regulating schools. You learn about teacher rights and responsibilities, student rights, and equity law to navigate educational systems professionally. | *[Teachers and the Law](https://books.google.com/books?isbn=9780133564464)* by David Schimmel, Louis Fischer, Leslie R. Stellman, and Cynthia K. Conlon | [Harvard GSE – Usable Knowledge](https://www.gse.harvard.edu/ideas/usable-knowledge) |
 
 # Code of conduct
 
 [Hocbigg's code of conduct](https://github.com/hocbigg/code-of-conduct).
-
-
 
