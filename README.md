@@ -3,39 +3,13 @@ title: Hocbigg - Education
 description: Path to a free self-taught education in Education!
 ---
 
-# Contents
-
-- [Summary](#summary)
-- [Communities](#communities)
-- [Curriculum](#curriculum)
-- [Code of conduct](#code-of-conduct)
-
-# Summary
+## Introduction
 
 The Education curriculum is a **complete education in Education** using online materials.
 
-## Organization
-
-This repository is organized into three main components:
-
-- **Core Curriculum** (this page): the foundational knowledge of the field;
-- **[Advanced Topics](advanced_topics.md)**: focused study in specific areas;
-- **[Projects](projects.md)**: support learning through practical application throughout the curriculum.
-
-**Process:** Learners may work through the curriculum independently or collaboratively, and either sequentially or selectively.
-
-- For simplicity, courses in the Core Curriculum are ordered according to their prerequisites.
-- The Core Curriculum provides a shared foundation and is intended to be completed in full.
-- Advanced Topics are optional; learners are encouraged to select one area of focus and complete all courses within that topic.
-
-Practical work is integrated through the [Projects section](projects.md) and may be undertaken alongside coursework.
-
-Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in [extras/courses](extras/courses.md), [extras/readings](extras/readings.md).
-
 **[How to contribute](/CONTRIBUTING.html)**
 
-# Communities
+## Communities
 
 - Forums:
     - [ProTeacher Community](https://proteacher.net/)
@@ -47,79 +21,115 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
     - [r/teaching](https://www.reddit.com/r/teaching/)
     - [r/Education](https://www.reddit.com/r/Education/)
 - You can also interact through [GitHub issues](https://github.com/hocbigg/education/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
-- Join our Discord server (for discussions around this and other curricula): 
-    
-    [![discord link](/assets/discord.png)](https://discord.gg/KHqAv4Nvm5)
 
-# Curriculum
+## Curriculum
 
-# Curriculum
+### Introduction to Education Studies
 
-## Foundations of Education
+Introduces the multidisciplinary field of education, examining schooling structures, teaching as a profession, and foundational contemporary debates.
 
-These early sections introduce the basic ideas, background, and ways of thinking about education as a discipline.
+[Introduction to Education Studies by Steve Bartlett and Diana Burton](https://books.google.com/books?isbn=9781473919006) - The primary comprehensive survey textbook, examining the sociological, psychological, historical, and policy dimensions of education.
 
-### Education as a Field
+[Introduction to Education: Understanding and Evaluating Education (MIT OpenCourseWare)](https://ocw.mit.edu/courses/11-125-introduction-to-education-understanding-and-evaluating-education-spring-2009/) - A free open-courseware alternative to Bartlett and Burton, exploring classroom environments and systemic reform through fieldwork assignments and analytical readings.
 
-| Subject | Why study? | Book / Text | Online Resource |
-| --- | --- | --- | --- |
-| Introduction to Education Studies | It gives you a clear overview of how education works as a field. You learn key concepts and major areas without needing any prior knowledge. This helps you build a strong base for deeper study. | [*An Introduction to Education Studies*](https://archive.org/details/introductiontoed0000bart) by Steve Bartlett and Diana Burton | [MIT OCW – Introduction to Education](https://ocw.mit.edu/courses/11-125-introduction-to-education-understanding-and-evaluating-education-spring-2009/) |
-| Philosophy of Education | It helps you examine the purposes and values behind teaching and learning. You develop skills to think critically about what makes education meaningful. This builds your ability to make thoughtful decisions as an educator. | [*Philosophy of Education* by Nel Noddings](https://archive.org/details/philosophyofeduc0000nodd) | [Open Yale – Philosophy and the Science of Human Nature](https://oyc.yale.edu/philosophy/phil-181) |
-| History of Education | It shows how past ideas, systems, and events shaped today's schools. You gain perspective to avoid repeating old mistakes and improve current practices. This helps you understand why education is the way it is now. | [*A History of Western Education* by James Bowen](https://archive.org/details/historyofwestern0000bowe_h0l6) | [MIT OCW – Introduction to Education](https://ocw.mit.edu/courses/11-125-introduction-to-education-understanding-and-evaluating-education-spring-2009/) |
+[Foundations of Teaching for Learning: Introduction (Coursera / Commonwealth Education Trust)](https://www.coursera.org/learn/teaching) - A concise, applied digital course that complements either comprehensive overview above by focusing specifically on teacher identity, ethical duties, and daily classroom roles.
 
-### Academic Literacy for Education
+### Philosophy of Education
 
-| Subject | Why study? | Book / Text | Online Resource |
-| --- | --- | --- | --- |
-| Educational Research and Inquiry | It teaches you how to read empirical educational research, understand quantitative and qualitative methodologies, and design action-research investigations. These abilities enable you to make evidence-based pedagogical decisions. | *Educational Research: Competencies for Analysis and Applications* by L. R. Gay, Geoffrey E. Mills, and Peter Airasian; [*The Craft of Research*](https://archive.org/details/craftofresearch0000boot) | [MIT OCW – Crafting Research Questions](https://ocw.mit.edu/courses/11-233-crafting-research-questions-and-qualitative-methodology-fall-2005/) |
+Examines fundamental questions concerning the aims, ethical obligations, epistemological assumptions, and values that govern educational practice.
 
-## Learning, Development, and Teaching
+[Philosophy of Education by Nel Noddings](https://books.google.com/books?isbn=9780813349725) - The foundational modern textbook, systematically examining classical and contemporary philosophical traditions while centering care ethics.
 
-This section builds directly on the foundations by explaining how learning happens, how people grow, and how effective teaching works in practice.
+[Democracy and Education by John Dewey](https://www.gutenberg.org/ebooks/852) - A seminal open-access primary text to read alongside or after Noddings, establishing progressive, experiential, and democratic arguments for schooling.
 
-### Learning Sciences
+[Philosophy of Education (Stephen Hicks / Center for Ethics and Entrepreneurship)](https://www.stephenhicks.org/philosophy-of-education/) - A standalone audio and video lecture series alternative to the written surveys, tracing how metaphysics, epistemology, and ethics shape educational theory.
 
-| Subject | Why study? | Book / Text | Online Resource |
-| --- | --- | --- | --- |
-| Educational Psychology | It explains how students think, feel, and behave while learning. You learn foundational cognitive, behavioral, and constructivist principles that match diverse learning needs. This empowers you to optimize retention and motivation. | *Educational Psychology* by Anita Woolfolk; [*How Learning Works* by Ambrose et al.](https://www.cmu.edu/teaching/designteach/design/instructionalstrategies.html) | [Modern States – Introduction to Educational Psychology](https://modernstates.org/course/introduction-to-educational-psychology) |
-| Human Development | It covers how people grow physically, emotionally, and cognitively from childhood to adulthood. You gain knowledge to support learners at different life stages. This helps you create age-appropriate teaching and activities. | [*Development Through the Lifespan* by Laura Berk](https://archive.org/details/developmentthrou0000berk_n3u1) | [OpenLearn – Introduction to Child Psychology](https://www.open.edu/openlearn/health-sports-psychology/psychology/childhood-youth/introduction-child-psychology/content-section-0) |
+### History of Education
 
-### How Teaching Works
+Surveys the historical evolution of formal schooling, major reform movements, and the social struggles that shaped modern educational institutions.
 
-| Subject | Why study? | Book / Text | Online Resource |
-| --- | --- | --- | --- |
-| Pedagogy & Teaching Models | It presents core research-based models of instruction, such as direct instruction, inquiry-based learning, and cooperative structures. You learn how to select and apply the right instructional model for specific learning goals. | *[Models of Teaching](https://books.google.com/books?isbn=9780133749304)* by Bruce Joyce, Marsha Weil, and Emily Calhoun | [Carnegie Mellon Eberly Center – Teaching Principles](https://www.cmu.edu/teaching/) |
-| Instructional Methods & Design | It gives you practical frameworks for planning lessons, structuring activities, and aligning learning objectives with teaching strategies. This builds your ability to deliver coherent, goal-oriented instruction. | *[Effective Teaching Methods: Research-Based Practice](https://books.google.com/books?isbn=9780132849609)* by Gary D. Borich | [OpenLearn – Free Education and Teaching Courses](https://www.open.edu/openlearn/) |
-| Classroom Management & Learning Environments | It equips you with proactive strategies to establish positive classroom culture, routines, and behavior support systems. This ensures a safe, respectful, and productive learning environment for all students. | *[Classroom Management for Middle and High School Teachers](https://books.google.com/books?isbn=9780134028859)* by Edmund T. Emmer and Carolyn M. Evertson | [EEF – Teaching and Learning Toolkit](https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit) |
+[American Education: A History by Wayne J. Urban and Jennings L. Wagoner, Jr.](https://books.google.com/books?isbn=9781138387577) - The standard core history textbook, detailing the institutional development of common schools, secondary education, and reform cycles from colonial eras to the present.
 
-## Curriculum, Assessment, and Inclusion
+[The American School: A Global Context by Joel Spring](https://books.google.com/books?isbn=9781138502925) - A critical alternative or companion to Urban and Wagoner, foregrounding ideological conflicts, racial segregation, civil rights struggles, and cultural assimilation.
 
-Connecting the previous material to real classroom decisions: planning what to teach, checking what students have learned, and making sure everyone can participate.
+School: The Story of American Public Education (PBS / Films Media Group) - An audiovisual documentary series that complements the readings by dramatizing key milestones and historical reformers; search for the title on YouTube or educational streaming platforms.
 
-### Curriculum and Instruction
+### Child and Adolescent Development
 
-| Subject | Why study? | Book / Text | Online Resource |
-| --- | --- | --- | --- |
-| Curriculum Theory | It helps you understand how curricula are planned, designed, and evaluated. You learn backward design and curriculum models to connect overarching educational aims with day-to-day instructional planning. | [*Curriculum: From Theory to Practice* by Wesley Null](https://us.sagepub.com/en-us/nam/curriculum/book258877); *Understanding by Design* by Grant Wiggins and Jay McTighe | [UNESCO – International Bureau of Education Resources](https://unesdoc.unesco.org/) |
-| Assessment Foundations | It shows how to design valid, reliable formative and summative assessments. You gain skills to construct rubrics, evaluate student understanding fairly, and use diagnostic data to guide subsequent instruction. | *[Classroom Assessment: What Teachers Need to Know](https://books.google.com/books?isbn=9780132868600)* by W. James Popham | [OpenLearn – Assessment in Education](https://www.open.edu/openlearn/) |
+Explores the physical, cognitive, linguistic, and socio-emotional developmental milestones of learners from early childhood through adolescence.
 
-### Inclusion and Learners
+[Development Through the Lifespan by Laura E. Berk](https://books.google.com/books?isbn=9780134419695) - The primary comprehensive reference textbook, detailing physical, cognitive, and socio-emotional maturation from early childhood through youth.
 
-| Subject | Why study? | Book / Text | Online Resource |
-| --- | --- | --- | --- |
-| Inclusive & Special Education | It teaches how to support learners with disabilities, neurodivergent students, and diverse learning profiles. You learn differentiated instruction, accommodations, and legal individualized education frameworks. | *Including Students with Special Needs: A Practical Guide for Classroom Teachers* by Marilyn Friend and William D. Bursuck; [UNESCO – *Inclusion and Equity in Education*](https://unesdoc.unesco.org/ark:/48223/pf0000374447) | [Vanderbilt University IRIS Center – Inclusive Education Modules](https://iris.peabody.vanderbilt.edu/) |
+[Introduction to Child Psychology (OpenLearn / The Open University)](https://www.open.edu/openlearn/health-sports-psychology/psychology/childhood-youth/introduction-child-psychology/content-section-0) - A free introductory online course that serves as a concise alternative or preparatory primer before undertaking Berk's extensive textbook.
 
-## Society, Policy, and Systems
+### Educational Psychology
 
-This section places everything in a wider context by showing how schools connect to society, laws, and larger systems.
+Investigates how people process, retain, and transfer knowledge, covering behavioral, cognitive, constructivist learning theories, and student motivation.
 
-| Subject | Why study? | Book / Text | Online Resource |
-| --- | --- | --- | --- |
-| Sociology of Education | It examines how social institutions, culture, class, and inequality shape schooling and learning outcomes. This sociological perspective helps educators navigate and dismantle structural barriers to student success. | *[The Sociology of Education: A Systematic Analysis](https://books.google.com/books?isbn=9781138237360)* by Jeanne H. Ballantine, Joan Z. Spade, and Jenny M. Stuber | [OpenLearn – Education and Development](https://www.open.edu/openlearn/) |
-| Comparative Education | It examines and contrasts national education systems around the world. You gain insights into global education policies, cross-national benchmarks, and alternative models of schooling to inform domestic practice. | *[Comparative and International Education: An Introduction to Theory, Method, and Practice](https://archive.org/details/comparativeinter0000phil)* by David Phillips and Michele Schweisfurth | [UNESCO Open Access Repository](https://unesdoc.unesco.org/) |
-| Education Policy & Law | It covers the statutes, court decisions, ethics, and governance policies regulating schools. You learn about teacher rights and responsibilities, student rights, and equity law to navigate educational systems professionally. | *[Teachers and the Law](https://books.google.com/books?isbn=9780133564464)* by David Schimmel, Louis Fischer, Leslie R. Stellman, and Cynthia K. Conlon | [Harvard GSE – Usable Knowledge](https://www.gse.harvard.edu/ideas/usable-knowledge) |
+[Educational Psychology: Active Learning Edition by Anita Woolfolk](https://books.google.com/books?isbn=9780134774329) - The definitive comprehensive textbook for deep study of cognitive architecture, schema acquisition, self-efficacy, and learning science.
 
-# Code of conduct
+[Educational Psychology by Kelvin Seifert and Rosemary Sutton (Open Textbook Library)](https://open.umn.edu/opentextbooks/textbooks/153) - A free open-access textbook alternative to Woolfolk, covering foundational cognitive processes, classroom dynamics, and learner motivation.
 
-[Hocbigg's code of conduct](https://github.com/hocbigg/code-of-conduct).
+[Introduction to Educational Psychology (Modern States)](https://modernstates.org/course/introduction-to-educational-psychology/) - A structured video lecture course that pairs effectively with either textbook above to reinforce core learning theories and developmental concepts.
 
+### Curriculum Design and Development
+
+Focuses on the architecture of educational programs, backward design methodology, scope and sequence planning, and curricular alignment.
+
+[Curriculum: From Theory to Practice by Wesley Null](https://books.google.com/books?isbn=9781442270923) - The foundational textbook covering historical curriculum traditions, structural curriculum models, and institutional evaluation.
+
+[Understanding by Design by Grant Wiggins and Jay McTighe](https://books.google.com/books?isbn=9781416600350) - A vital practical methodology to study immediately following or alongside Null, detailing backward design, essential questions, and planning for student transfer.
+
+[Foundations of Teaching for Learning: Curriculum (Coursera / Commonwealth Education Trust)](https://www.coursera.org/learn/teacher-curriculum) - A short, video-based alternative or introductory primer on translating overarching curricular frameworks into concrete classroom units.
+
+### Instructional Design and Pedagogy
+
+Teaches evidence-based instructional methods, lesson sequencing, questioning techniques, and direct versus inquiry-based pedagogical frameworks.
+
+[Effective Teaching Methods: Research-Based Practice by Gary D. Borich](https://books.google.com/books?isbn=9780134056258) - The primary practical textbook, teaching explicit lesson execution, direct instruction procedures, student-centered questioning, and instructional delivery.
+
+[Models of Teaching by Bruce R. Joyce, Marsha Weil, and Emily Calhoun](https://books.google.com/books?isbn=9780133749304) - A conceptual companion to Borich, expanding beyond direct instruction to detail specialized instructional models across information-processing, social, and behavioral domains.
+
+[Foundations of Teaching for Learning: Planning for Teaching and Learning (Coursera / Commonwealth Education Trust)](https://www.coursera.org/learn/teaching-plan) - A free video-based alternative or quick-start guide to the core planning strategies found in Borich.
+
+### Classroom Management and Learning Environments
+
+Addresses proactive strategies for establishing classroom routines, physical room design, supportive culture, and positive behavior interventions.
+
+[Classroom Management for Middle and High School Teachers by Edmund T. Emmer and Carolyn M. Evertson](https://books.google.com/books?isbn=9780134028859) - The core comprehensive textbook, providing structured frameworks for room arrangement, rule and routine formulation, and behavior support systems.
+
+[Classroom Behavior Management: Key Concepts and Foundational Practices (The IRIS Center / Vanderbilt University)](https://iris.peabody.vanderbilt.edu/module/beh1/) - An open interactive module that complements Emmer and Evertson with video scenarios, behavior escalation cycles, and practical behavior management planning.
+
+### Classroom Assessment and Evaluation
+
+Covers the design, implementation, and analysis of formative checks, summative evaluations, authentic assessments, and grading rubrics.
+
+[Classroom Assessment: What Teachers Need to Know by W. James Popham](https://books.google.com/books?isbn=9780134027296) - The primary authoritative textbook covering test construction, reliability, validity, performance tasks, rubric design, and assessment bias.
+
+[Foundations of Teaching for Learning: Introduction to Student Assessment (Coursera / Commonwealth Education Trust)](https://www.coursera.org/learn/learning-assessment) - A free video course that serves as a concise, applied alternative or entry-level companion to Popham, focusing on diagnostic checks and formative feedback loops.
+
+### Inclusive and Special Education
+
+Prepares educators to support neurodivergent learners and students with disabilities through differentiated instruction, accommodations, and Universal Design for Learning.
+
+[Including Students with Special Needs: A Practical Guide for Classroom Teachers by Marilyn Friend and William D. Bursuck](https://books.google.com/books?isbn=9780134754093) - The primary core textbook covering special education legal frameworks, individualized education programs, 504 plans, and co-teaching strategies.
+
+[Universal Design for Learning: Designing Learning Experiences That Engage and Challenge All Students (The IRIS Center / Vanderbilt University)](https://iris.peabody.vanderbilt.edu/module/udl/) - A free interactive learning module that complements Friend and Bursuck by providing practical, scenario-based training in proactively removing curricular barriers.
+
+[Accommodations: Instructional and Testing Supports for Students with Disabilities (The IRIS Center / Vanderbilt University)](https://iris.peabody.vanderbilt.edu/module/acc/) - A targeted follow-up module to complete alongside or after the UDL training, focusing on selecting and evaluating specific presentation, response, and environmental accommodations.
+
+### Sociology of Education
+
+Analyzes how broader social institutions, socioeconomic status, race, gender, and culture intersect with school structures and student achievement.
+
+[The Sociology of Education: A Systematic Analysis by Jeanne H. Ballantine, Joan Z. Spade, and Jenny M. Stuber](https://books.google.com/books?isbn=9781138237360) - The primary comprehensive textbook, analyzing schools as formal organizations, cultural reproduction, social stratification, and systemic educational inequalities.
+
+[Exploring equality and equity in education (OpenLearn / The Open University)](https://www.open.edu/openlearn/education-development/exploring-equality-and-equity-education/content-section-0) - A free, focused short course serving as an accessible alternative or applied supplement exploring how educational policies and classroom practices influence equity.
+
+### Education Policy and Law
+
+Examines legal mandates, constitutional rights, tort liability, ethics, and governance policies governing educational institutions.
+
+[Teachers and the Law by David Schimmel, Louis Fischer, Leslie R. Stellman, and Cynthia K. Conlon](https://books.google.com/books?isbn=9780133564464) - The essential practical textbook and casebook, covering student expression, teacher contracts, negligence, copyright, and due process.
+
+[Introduction to Key Constitutional Concepts and Supreme Court Cases (Coursera / University of Pennsylvania)](https://www.coursera.org/learn/constitutional-law) - A foundational legal course recommended prior to or alongside Schimmel et al. to establish the First and Fourteenth Amendment jurisprudence that governs public schooling.
