@@ -5,11 +5,33 @@ description: Path to a free self-taught education in Education!
 
 ## Introduction
 
-The Education curriculum is a **complete education in Education** using online materials.
+Education is an applied, multidisciplinary field that examines how human beings acquire and organize knowledge, how learning environments are engineered, and how institutional systems structure educational opportunity. Studying education goes far beyond mastering classroom techniques; it requires grappling with cognitive development, the philosophical aims of schooling, the architecture of curriculum, and the legal and social forces that shape educational outcomes.
 
-**[How to contribute](/CONTRIBUTING.html)**
+This curriculum is built for independent, self-directed learners starting with no prior formal background in education or teacher training. It is equally relevant for aspiring classroom teachers, instructional designers, tutors, educational technologists, and self-taught polymaths seeking to understand how learning happens.
 
-## Communities
+The focus is strictly on foundational undergraduate knowledge: the core theories, instructional frameworks, and institutional realities that every practitioner and educational theorist must understand. It deliberately omits specialized graduate research training — such as advanced psychometrics, statistical modeling, and formal qualitative coding — in favor of actionable concepts, research-backed instructional models, and practical classroom dynamics.
+
+### How to Navigate the Curriculum
+
+The curriculum is sequenced into four interrelated areas of study:
+
+- **Intellectual and Institutional Foundations:** *Introduction to Education Studies*, *Philosophy of Education*, and *History of Education* establish the historical origins, systemic functions, and ethical debates that define modern schooling.
+- **Learner Development and Cognition:** *Child and Adolescent Development* and *Educational Psychology* examine the biological, social, and cognitive mechanisms governing how people grow, process information, retain memory, and stay motivated.
+- **Instructional Delivery and Environment:** *Curriculum Design and Development*, *Instructional Design and Pedagogy*, *Classroom Management and Learning Environments*, and *Classroom Assessment and Evaluation* translate cognitive theory into concrete practice — covering backward planning, lesson execution, culture-setting, and diagnostic assessment.
+- **Equity, Diversity, and Governance:** *Inclusive and Special Education*, *Sociology of Education*, and *Education Policy and Law* address systemic stratification, accommodations for neurodivergent learners and students with disabilities, and the constitutional boundaries governing schools.
+
+While you can read the historical, philosophical, and sociological subjects in any order, you should study *Educational Psychology* before tackling curriculum, pedagogy, and assessment. Effective instructional design, rubric creation, and classroom management all directly apply cognitive and behavioral principles.
+
+### Beyond the Core
+
+Once you have completed this foundational path, you can explore the other resources in this series:
+
+- Explore specialized subfields — such as cognitive load engineering, educational data mining, improvement science, and artificial intelligence in education — in [Advanced Topics](advanced_topics.md).
+- Apply your learning by building tangible artifacts, including unit blueprints, behavior plans, policy briefs, and scoring rubrics, using the step-by-step guides in [Projects](projects.md).
+- Engage with landmark primary texts, philosophical treatises, and historical critiques in [Readings](extras/readings.md).
+- Deepen your intuition through recorded university lectures and dedicated video series in [Courses](extras/courses.md).
+
+### Communities
 
 - Forums:
     - [ProTeacher Community](https://proteacher.net/)
