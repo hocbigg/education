@@ -1,292 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Hocbigg - Education</title>
-<link rel="stylesheet" href="/education/style.css">
-<meta name="description" content="Path to a free self-taught education in Education!">
+  <title>Hocbigg - Education</title>
+  <meta name="description" content="Path to a free self-taught education in Education!">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/education/">
+  <link rel="canonical" href="https://hocbigg.github.io/education/">
+  <meta property="og:title" content="Hocbigg - Education">
+  <meta property="og:description" content="Path to a free self-taught education in Education!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/education/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Hocbigg - Education">
-<meta property="og:description" content="Path to a free self-taught education in Education!">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/education/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/education/">Education</a>
-<a href="/education/advanced_topics.html">Advanced Topics</a>
-<a href="/education/projects.html">Projects</a>
-<a href="/education/extras/courses.html">Extra Courses</a>
-<a href="/education/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/education/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/education/">Education</a></li>
+      <li><a href="/education/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/education/projects.html">Projects</a></li>
+      <li><a href="/education/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/education/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/education" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
+  <main id="main-content">
+    <article>
 <header class="page-header">
-  <img src="/images/logo.png" alt="">
+  <img src="/images/logo.png" alt="Hocbigg logo">
   <h1>Hocbigg - Education</h1>
+  <p class="page-subtitle">Path to a free self-taught education in Education!</p>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-09-17">2026-09-17</time></small></p>
 </header>
-
-<h1 id="contents">Contents</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Education is an applied, multidisciplinary field that examines how human beings acquire and organize knowledge, how learning environments are engineered, and how institutional systems structure educational opportunity. Studying education goes far beyond mastering classroom techniques; it requires grappling with cognitive development, the philosophical aims of schooling, the architecture of curriculum, and the legal and social forces that shape educational outcomes.</p>
+<p>This curriculum is built for independent, self-directed learners starting with no prior formal background in education or teacher training. It is equally relevant for aspiring classroom teachers, instructional designers, tutors, educational technologists, and self-taught polymaths seeking to understand how learning happens.</p>
+<p>The focus is strictly on foundational undergraduate knowledge: the core theories, instructional frameworks, and institutional realities that every practitioner and educational theorist must understand. It deliberately omits specialized graduate research training — such as advanced psychometrics, statistical modeling, and formal qualitative coding — in favor of actionable concepts, research-backed instructional models, and practical classroom dynamics.</p>
+<h3 id="how-to-navigate-the-curriculum">How to Navigate the Curriculum</h3>
+<p>The curriculum is sequenced into four interrelated areas of study:</p>
 <ul>
-<li><a href="#summary">Summary</a></li>
-<li><a href="#communities">Communities</a></li>
-<li><a href="#curriculum">Curriculum</a></li>
-<li><a href="#code-of-conduct">Code of conduct</a></li>
+<li><strong>Intellectual and Institutional Foundations:</strong> <em>Introduction to Education Studies</em>, <em>Philosophy of Education</em>, and <em>History of Education</em> establish the historical origins, systemic functions, and ethical debates that define modern schooling.</li>
+<li><strong>Learner Development and Cognition:</strong> <em>Child and Adolescent Development</em> and <em>Educational Psychology</em> examine the biological, social, and cognitive mechanisms governing how people grow, process information, retain memory, and stay motivated.</li>
+<li><strong>Instructional Delivery and Environment:</strong> <em>Curriculum Design and Development</em>, <em>Instructional Design and Pedagogy</em>, <em>Classroom Management and Learning Environments</em>, and <em>Classroom Assessment and Evaluation</em> translate cognitive theory into concrete practice — covering backward planning, lesson execution, culture-setting, and diagnostic assessment.</li>
+<li><strong>Equity, Diversity, and Governance:</strong> <em>Inclusive and Special Education</em>, <em>Sociology of Education</em>, and <em>Education Policy and Law</em> address systemic stratification, accommodations for neurodivergent learners and students with disabilities, and the constitutional boundaries governing schools.</li>
 </ul>
-<h1 id="summary">Summary</h1>
-<p>The Education curriculum is a <strong>complete education in Education</strong> using online materials.</p>
-<h2 id="organization">Organization</h2>
-<p>This repository is organized into three main components:</p>
+<p>While you can read the historical, philosophical, and sociological subjects in any order, you should study <em>Educational Psychology</em> before tackling curriculum, pedagogy, and assessment. Effective instructional design, rubric creation, and classroom management all directly apply cognitive and behavioral principles.</p>
+<h3 id="beyond-the-core">Beyond the Core</h3>
+<p>Once you have completed this foundational path, you can explore the other resources in this series:</p>
 <ul>
-<li><strong>Core Curriculum</strong> (this page): the foundational knowledge of the field;</li>
-<li><strong><a href="advanced_topics.html">Advanced Topics</a></strong>: focused study in specific areas;</li>
-<li><strong><a href="projects.html">Projects</a></strong>: support learning through practical application throughout the curriculum.</li>
+<li>Explore specialized subfields — such as cognitive load engineering, educational data mining, improvement science, and artificial intelligence in education — in <a href="advanced_topics.html">Advanced Topics</a>.</li>
+<li>Apply your learning by building tangible artifacts, including unit blueprints, behavior plans, policy briefs, and scoring rubrics, using the step-by-step guides in <a href="projects.html">Projects</a>.</li>
+<li>Engage with landmark primary texts, philosophical treatises, and historical critiques in <a href="extras/readings.html">Readings</a>.</li>
+<li>Deepen your intuition through recorded university lectures and dedicated video series in <a href="extras/courses.html">Courses</a>.</li>
 </ul>
-<p><strong>Process:</strong> Learners may work through the curriculum independently or collaboratively, and either sequentially or selectively.</p>
-<ul>
-<li>For simplicity, courses in the Core Curriculum are ordered according to their prerequisites.</li>
-<li>The Core Curriculum provides a shared foundation and is intended to be completed in full.</li>
-<li>Advanced Topics are optional; learners are encouraged to select one area of focus and complete all courses within that topic.</li>
-</ul>
-<p>Practical work is integrated through the <a href="projects.html">Projects section</a> and may be undertaken alongside coursework.</p>
-<p>Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in <a href="extras/courses.html">extras/courses</a>, <a href="extras/readings.html">extras/readings</a>.</p>
-<p><strong><a href="/CONTRIBUTING.html">How to contribute</a></strong></p>
-<h1 id="communities">Communities</h1>
+<h3 id="communities">Communities</h3>
 <ul>
 <li>Forums:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://proteacher.net/">ProTeacher Community</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://forums.atozteacherstuff.com/">A to Z Teacher Stuff Forums</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://home.edweb.net/">edWeb.net</a></li>
+<li><a href="https://proteacher.net/" target="_blank" rel="noopener noreferrer">ProTeacher Community</a></li>
+<li><a href="https://forums.atozteacherstuff.com/" target="_blank" rel="noopener noreferrer">A to Z Teacher Stuff Forums</a></li>
+<li><a href="https://home.edweb.net/" target="_blank" rel="noopener noreferrer">edWeb.net</a></li>
 </ul>
 </li>
 <li>Subreddits:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/Teachers/">r/Teachers</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/education/">r/education</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/teaching/">r/teaching</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/Education/">r/Education</a></li>
+<li><a href="https://www.reddit.com/r/Teachers/" target="_blank" rel="noopener noreferrer">r/Teachers</a></li>
+<li><a href="https://www.reddit.com/r/education/" target="_blank" rel="noopener noreferrer">r/education</a></li>
+<li><a href="https://www.reddit.com/r/teaching/" target="_blank" rel="noopener noreferrer">r/teaching</a></li>
+<li><a href="https://www.reddit.com/r/Education/" target="_blank" rel="noopener noreferrer">r/Education</a></li>
 </ul>
 </li>
-<li>You can also interact through <a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/education/issues">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
-<li>
-<p>Join our Discord server (for discussions around this and other curricula): </p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/KHqAv4Nvm5"><img alt="discord link" src="/assets/discord.png" /></a></p>
-</li>
+<li>You can also interact through <a href="https://github.com/hocbigg/education/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
 </ul>
-<h1 id="curriculum">Curriculum</h1>
-<h2 id="how-to-use-this-curriculum">How to use this curriculum</h2>
-<h3 id="core-sections">Core Sections</h3>
-<p>Everyone should complete these four sections in sequence to build a solid, well-rounded understanding of the field:</p>
-<p><strong>Foundations of Education</strong>: Start here. These early sections introduce the basic ideas, background, and ways of thinking about education as a discipline.</p>
-<p><strong>Learning, Development, and Teaching</strong>: Move to this next. It builds directly on the foundations by explaining how learning happens, how people grow, and how effective teaching works in practice.</p>
-<p><strong>Curriculum, Assessment, and Inclusion</strong>: Take this third. It connects the previous material to real classroom decisions: planning what to teach, checking what students have learned, and making sure everyone can participate.</p>
-<p><strong>Society, Policy, and Systems</strong>: Complete this fourth. It places everything in a wider context by showing how schools connect to society, laws, and larger systems.</p>
-<p>Finish these four sections in the listed order before moving on. They give you the essential knowledge and concepts needed to understand education coherently (before moving to <a href="advanced_topics.html">Advanced Topics</a>).</p>
-<h2 id="foundations-of-education">Foundations of Education</h2>
-<h3 id="education-as-a-field">Education as a Field</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Introduction to Education Studies</td>
-<td>It gives you a clear overview of how education works as a field. You learn key concepts and major areas without needing any prior knowledge. This helps you build a strong base for deeper study.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/introductiontoed0000bart"><em>An Introduction to Education Studies</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/11-125-introduction-to-education-understanding-and-evaluating-education-spring-2009/">MIT OCW – Introduction to Education</a></td>
-</tr>
-<tr>
-<td>Philosophy of Education</td>
-<td>It helps you examine the purposes and values behind teaching and learning. You develop skills to think critically about what makes education meaningful. This builds your ability to make thoughtful decisions as an educator.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/philosophyofeduc0000nodd"><em>Philosophy of Education</em> by Nel Noddings</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://oyc.yale.edu/philosophy/phil-181">Open Yale – Philosophy and the Science of Human Nature</a></td>
-</tr>
-<tr>
-<td>History of Education</td>
-<td>It shows how past ideas, systems, and events shaped today's schools. You gain perspective to avoid repeating old mistakes and improve current practices. This helps you understand why education is the way it is now.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/historyofwestern0000bowe_h0l6"><em>A History of Western Education</em> by James Bowen</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/11-125-introduction-to-education-understanding-and-evaluating-education-spring-2009/">MIT OCW – Introduction to Education</a></td>
-</tr>
-</tbody>
-</table>
-<h3 id="academic-literacy-for-education">Academic Literacy for Education</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Academic Reading &amp; Writing</td>
-<td>It teaches you how to read complex texts carefully and write clear, evidence-based arguments. You build skills to think critically and communicate ideas effectively. These abilities support success in all education studies and teaching.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/craftofresearch0000boot"><em>The Craft of Research</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/11-233-crafting-research-questions-and-qualitative-methodology-fall-2005/">MIT OCW – Crafting Research Questions</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="learning-development-and-teaching">Learning, Development, and Teaching</h2>
-<h3 id="learning-sciences">Learning Sciences</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Educational Psychology</td>
-<td>It explains how students think, feel, and behave while learning. You learn to use proven strategies that match different learning needs and styles. This makes you better at helping students succeed in the classroom.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.cmu.edu/teaching/designteach/design/instructionalstrategies.html"><em>How Learning Works</em> by Ambrose et al.</a> (CMU resources &amp; principles; book widely recommended)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://modernstates.org/course/introduction-to-educational-psychology">Modern States – Introduction to Educational Psychology</a> (free, self-paced, CLEP-aligned)</td>
-</tr>
-<tr>
-<td>Human Development</td>
-<td>It covers how people grow physically, emotionally, and cognitively from childhood to adulthood. You gain knowledge to support learners at different life stages. This helps you create age-appropriate teaching and activities.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/developmentthrou0000berk_n3u1"><em>Development Through the Lifespan</em> by Laura Berk</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.open.edu/openlearn/health-sports-psychology/psychology/childhood-youth/introduction-child-psychology/content-section-0">Open University – Lifespan Development</a></td>
-</tr>
-</tbody>
-</table>
-<h3 id="how-teaching-works">How Teaching Works</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Pedagogy &amp; Teaching Models</td>
-<td>It reveals the science behind how people actually learn best. You discover practical ways to design lessons that engage and retain knowledge. This improves your ability to teach effectively in real classrooms.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.cmu.edu/teaching/designteach/design/instructionalstrategies.html"><em>How Learning Works</em> by Ambrose et al.</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.cmu.edu/teaching/">Carnegie Mellon Eberly Center</a></td>
-</tr>
-<tr>
-<td>Instructional Methods</td>
-<td>It gives you tools and techniques for delivering lessons successfully. You learn various approaches to present content and guide student practice. This builds your confidence to adapt teaching to different situations.</td>
-<td>General pedagogy resources (various)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/search/?d=Urban%20Studies%20and%20Planning&amp;t=Education">MIT OCW – Education lectures</a></td>
-</tr>
-<tr>
-<td>Classroom Interaction</td>
-<td>It teaches ways to encourage meaningful talk and discussion among students. You develop skills to create classrooms where everyone participates and thinks deeply. This supports better learning through dialogue and collaboration.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/dialogic-teaching">EEF – Dialogic Teaching</a></td>
-<td>General university education resources</td>
-</tr>
-</tbody>
-</table>
-<h2 id="curriculum-assessment-and-inclusion">Curriculum, Assessment, and Inclusion</h2>
-<h3 id="curriculum-and-instruction">Curriculum and Instruction</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Curriculum Theory</td>
-<td>It helps you understand how curricula are planned and why certain content is chosen. You learn to connect theory with practical classroom decisions. This allows you to design or improve educational programs thoughtfully.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://us.sagepub.com/en-us/nam/curriculum/book258877"><em>Curriculum: From Theory to Practice</em> by Wesley Null</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/search/?d=Urban%20Studies%20and%20Planning&amp;t=Education">MIT OCW – Education</a></td>
-</tr>
-<tr>
-<td>Assessment Foundations</td>
-<td>It shows how to measure student learning fairly and accurately. You gain skills to create tests and tasks that check real understanding. This helps you give useful feedback and adjust teaching when needed.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://us.sagepub.com/en-us/nam/classroom-assessment/book258878"><em>Classroom Assessment</em> by Susan Brookhart</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/11-125-introduction-to-education-understanding-and-evaluating-education-spring-2009/">MIT OCW – Introduction to Education</a></td>
-</tr>
-</tbody>
-</table>
-<h3 id="inclusion-and-learners">Inclusion and Learners</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Inclusive &amp; Special Education</td>
-<td>It teaches how to support every learner, including those with disabilities. You learn strategies to make classrooms fair and accessible for all. This builds your ability to create equitable learning environments.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://unesdoc.unesco.org/ark:/48223/pf0000374447">UNESCO – <em>Inclusion and Equity in Education</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.iiep.unesco.org/en">UNESCO IIEP</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="society-policy-and-systems">Society, Policy, and Systems</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Sociology of Education</td>
-<td>It examines how society and culture shape schools and learning. You understand factors like inequality and social influences on education. This helps you address real-world challenges in teaching.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.open.edu/openlearn/education-development/education-childhood-and-society">OpenLearn – <em>Education, Childhood and Society</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.open.edu/openlearn/">Open University</a></td>
-</tr>
-<tr>
-<td>Comparative Education</td>
-<td>It compares education systems across different countries. You gain insights into what works well elsewhere and why. This broadens your perspective to improve local practices.</td>
-<td>General comparative resources</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://unesdoc.unesco.org/">UNESCO Comparative Education</a></td>
-</tr>
-<tr>
-<td>Education Policy &amp; Law</td>
-<td>It covers rules, laws, and policies that guide schools. You learn how decisions at higher levels affect classrooms. This prepares you to navigate and influence educational systems.</td>
-<td>General policy resources</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.gse.harvard.edu/ideas/usable-knowledge">Harvard Ed Policy Lectures</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="congratulations">Congratulations</h2>
-<p>After completing the requirements of the curriculum above,
-you will have completed the equivalent of a full bachelor's degree in Education.
-Congratulations!</p>
-<h1 id="code-of-conduct">Code of conduct</h1>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/code-of-conduct">Hocbigg's code of conduct</a>.</p>
-</article>
-</main>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="introduction-to-education-studies">Introduction to Education Studies</h3>
+<p>Introduces the multidisciplinary field of education, examining schooling structures, teaching as a profession, and foundational contemporary debates.</p>
+<p><a href="https://books.google.com/books?isbn=9781473919006" target="_blank" rel="noopener noreferrer">Introduction to Education Studies by Steve Bartlett and Diana Burton</a> - The primary comprehensive survey textbook, examining the sociological, psychological, historical, and policy dimensions of education.</p>
+<p><a href="https://ocw.mit.edu/courses/11-125-introduction-to-education-understanding-and-evaluating-education-spring-2009/" target="_blank" rel="noopener noreferrer">Introduction to Education: Understanding and Evaluating Education (MIT OpenCourseWare)</a> - A free open-courseware alternative to Bartlett and Burton, exploring classroom environments and systemic reform through fieldwork assignments and analytical readings.</p>
+<p><a href="https://www.coursera.org/learn/teaching" target="_blank" rel="noopener noreferrer">Foundations of Teaching for Learning: Introduction (Coursera / Commonwealth Education Trust)</a> - A concise, applied digital course that complements either comprehensive overview above by focusing specifically on teacher identity, ethical duties, and daily classroom roles.</p>
+<h3 id="philosophy-of-education">Philosophy of Education</h3>
+<p>Examines fundamental questions concerning the aims, ethical obligations, epistemological assumptions, and values that govern educational practice.</p>
+<p><a href="https://books.google.com/books?isbn=9780813349725" target="_blank" rel="noopener noreferrer">Philosophy of Education by Nel Noddings</a> - The foundational modern textbook, systematically examining classical and contemporary philosophical traditions while centering care ethics.</p>
+<p><a href="https://www.gutenberg.org/ebooks/852" target="_blank" rel="noopener noreferrer">Democracy and Education by John Dewey</a> - A seminal open-access primary text to read alongside or after Noddings, establishing progressive, experiential, and democratic arguments for schooling.</p>
+<p><a href="https://www.stephenhicks.org/philosophy-of-education/" target="_blank" rel="noopener noreferrer">Philosophy of Education (Stephen Hicks / Center for Ethics and Entrepreneurship)</a> - A standalone audio and video lecture series alternative to the written surveys, tracing how metaphysics, epistemology, and ethics shape educational theory.</p>
+<h3 id="history-of-education">History of Education</h3>
+<p>Surveys the historical evolution of formal schooling, major reform movements, and the social struggles that shaped modern educational institutions.</p>
+<p><a href="https://books.google.com/books?isbn=9781138387577" target="_blank" rel="noopener noreferrer">American Education: A History by Wayne J. Urban and Jennings L. Wagoner, Jr.</a> - The standard core history textbook, detailing the institutional development of common schools, secondary education, and reform cycles from colonial eras to the present.</p>
+<p><a href="https://books.google.com/books?isbn=9781138502925" target="_blank" rel="noopener noreferrer">The American School: A Global Context by Joel Spring</a> - A critical alternative or companion to Urban and Wagoner, foregrounding ideological conflicts, racial segregation, civil rights struggles, and cultural assimilation.</p>
+<p>School: The Story of American Public Education (PBS / Films Media Group) - An audiovisual documentary series that complements the readings by dramatizing key milestones and historical reformers; search for the title on YouTube or educational streaming platforms.</p>
+<h3 id="child-and-adolescent-development">Child and Adolescent Development</h3>
+<p>Explores the physical, cognitive, linguistic, and socio-emotional developmental milestones of learners from early childhood through adolescence.</p>
+<p><a href="https://books.google.com/books?isbn=9780134419695" target="_blank" rel="noopener noreferrer">Development Through the Lifespan by Laura E. Berk</a> - The primary comprehensive reference textbook, detailing physical, cognitive, and socio-emotional maturation from early childhood through youth.</p>
+<p><a href="https://www.open.edu/openlearn/health-sports-psychology/psychology/childhood-youth/introduction-child-psychology/content-section-0" target="_blank" rel="noopener noreferrer">Introduction to Child Psychology (OpenLearn / The Open University)</a> - A free introductory online course that serves as a concise alternative or preparatory primer before undertaking Berk's extensive textbook.</p>
+<h3 id="educational-psychology">Educational Psychology</h3>
+<p>Investigates how people process, retain, and transfer knowledge, covering behavioral, cognitive, constructivist learning theories, and student motivation.</p>
+<p><a href="https://books.google.com/books?isbn=9780134774329" target="_blank" rel="noopener noreferrer">Educational Psychology: Active Learning Edition by Anita Woolfolk</a> - The definitive comprehensive textbook for deep study of cognitive architecture, schema acquisition, self-efficacy, and learning science.</p>
+<p><a href="https://open.umn.edu/opentextbooks/textbooks/153" target="_blank" rel="noopener noreferrer">Educational Psychology by Kelvin Seifert and Rosemary Sutton (Open Textbook Library)</a> - A free open-access textbook alternative to Woolfolk, covering foundational cognitive processes, classroom dynamics, and learner motivation.</p>
+<p><a href="https://modernstates.org/course/introduction-to-educational-psychology/" target="_blank" rel="noopener noreferrer">Introduction to Educational Psychology (Modern States)</a> - A structured video lecture course that pairs effectively with either textbook above to reinforce core learning theories and developmental concepts.</p>
+<h3 id="curriculum-design-and-development">Curriculum Design and Development</h3>
+<p>Focuses on the architecture of educational programs, backward design methodology, scope and sequence planning, and curricular alignment.</p>
+<p><a href="https://books.google.com/books?isbn=9781442270923" target="_blank" rel="noopener noreferrer">Curriculum: From Theory to Practice by Wesley Null</a> - The foundational textbook covering historical curriculum traditions, structural curriculum models, and institutional evaluation.</p>
+<p><a href="https://books.google.com/books?isbn=9781416600350" target="_blank" rel="noopener noreferrer">Understanding by Design by Grant Wiggins and Jay McTighe</a> - A vital practical methodology to study immediately following or alongside Null, detailing backward design, essential questions, and planning for student transfer.</p>
+<p><a href="https://www.coursera.org/learn/teacher-curriculum" target="_blank" rel="noopener noreferrer">Foundations of Teaching for Learning: Curriculum (Coursera / Commonwealth Education Trust)</a> - A short, video-based alternative or introductory primer on translating overarching curricular frameworks into concrete classroom units.</p>
+<h3 id="instructional-design-and-pedagogy">Instructional Design and Pedagogy</h3>
+<p>Teaches evidence-based instructional methods, lesson sequencing, questioning techniques, and direct versus inquiry-based pedagogical frameworks.</p>
+<p><a href="https://books.google.com/books?isbn=9780134056258" target="_blank" rel="noopener noreferrer">Effective Teaching Methods: Research-Based Practice by Gary D. Borich</a> - The primary practical textbook, teaching explicit lesson execution, direct instruction procedures, student-centered questioning, and instructional delivery.</p>
+<p><a href="https://books.google.com/books?isbn=9780133749304" target="_blank" rel="noopener noreferrer">Models of Teaching by Bruce R. Joyce, Marsha Weil, and Emily Calhoun</a> - A conceptual companion to Borich, expanding beyond direct instruction to detail specialized instructional models across information-processing, social, and behavioral domains.</p>
+<p><a href="https://www.coursera.org/learn/teaching-plan" target="_blank" rel="noopener noreferrer">Foundations of Teaching for Learning: Planning for Teaching and Learning (Coursera / Commonwealth Education Trust)</a> - A free video-based alternative or quick-start guide to the core planning strategies found in Borich.</p>
+<h3 id="classroom-management-and-learning-environments">Classroom Management and Learning Environments</h3>
+<p>Addresses proactive strategies for establishing classroom routines, physical room design, supportive culture, and positive behavior interventions.</p>
+<p><a href="https://books.google.com/books?isbn=9780134028859" target="_blank" rel="noopener noreferrer">Classroom Management for Middle and High School Teachers by Edmund T. Emmer and Carolyn M. Evertson</a> - The core comprehensive textbook, providing structured frameworks for room arrangement, rule and routine formulation, and behavior support systems.</p>
+<p><a href="https://iris.peabody.vanderbilt.edu/module/beh1/" target="_blank" rel="noopener noreferrer">Classroom Behavior Management: Key Concepts and Foundational Practices (The IRIS Center / Vanderbilt University)</a> - An open interactive module that complements Emmer and Evertson with video scenarios, behavior escalation cycles, and practical behavior management planning.</p>
+<h3 id="classroom-assessment-and-evaluation">Classroom Assessment and Evaluation</h3>
+<p>Covers the design, implementation, and analysis of formative checks, summative evaluations, authentic assessments, and grading rubrics.</p>
+<p><a href="https://books.google.com/books?isbn=9780134027296" target="_blank" rel="noopener noreferrer">Classroom Assessment: What Teachers Need to Know by W. James Popham</a> - The primary authoritative textbook covering test construction, reliability, validity, performance tasks, rubric design, and assessment bias.</p>
+<p><a href="https://www.coursera.org/learn/learning-assessment" target="_blank" rel="noopener noreferrer">Foundations of Teaching for Learning: Introduction to Student Assessment (Coursera / Commonwealth Education Trust)</a> - A free video course that serves as a concise, applied alternative or entry-level companion to Popham, focusing on diagnostic checks and formative feedback loops.</p>
+<h3 id="inclusive-and-special-education">Inclusive and Special Education</h3>
+<p>Prepares educators to support neurodivergent learners and students with disabilities through differentiated instruction, accommodations, and Universal Design for Learning.</p>
+<p><a href="https://books.google.com/books?isbn=9780134754093" target="_blank" rel="noopener noreferrer">Including Students with Special Needs: A Practical Guide for Classroom Teachers by Marilyn Friend and William D. Bursuck</a> - The primary core textbook covering special education legal frameworks, individualized education programs, 504 plans, and co-teaching strategies.</p>
+<p><a href="https://iris.peabody.vanderbilt.edu/module/udl/" target="_blank" rel="noopener noreferrer">Universal Design for Learning: Designing Learning Experiences That Engage and Challenge All Students (The IRIS Center / Vanderbilt University)</a> - A free interactive learning module that complements Friend and Bursuck by providing practical, scenario-based training in proactively removing curricular barriers.</p>
+<p><a href="https://iris.peabody.vanderbilt.edu/module/acc/" target="_blank" rel="noopener noreferrer">Accommodations: Instructional and Testing Supports for Students with Disabilities (The IRIS Center / Vanderbilt University)</a> - A targeted follow-up module to complete alongside or after the UDL training, focusing on selecting and evaluating specific presentation, response, and environmental accommodations.</p>
+<h3 id="sociology-of-education">Sociology of Education</h3>
+<p>Analyzes how broader social institutions, socioeconomic status, race, gender, and culture intersect with school structures and student achievement.</p>
+<p><a href="https://books.google.com/books?isbn=9781138237360" target="_blank" rel="noopener noreferrer">The Sociology of Education: A Systematic Analysis by Jeanne H. Ballantine, Joan Z. Spade, and Jenny M. Stuber</a> - The primary comprehensive textbook, analyzing schools as formal organizations, cultural reproduction, social stratification, and systemic educational inequalities.</p>
+<p><a href="https://www.open.edu/openlearn/education-development/exploring-equality-and-equity-education/content-section-0" target="_blank" rel="noopener noreferrer">Exploring equality and equity in education (OpenLearn / The Open University)</a> - A free, focused short course serving as an accessible alternative or applied supplement exploring how educational policies and classroom practices influence equity.</p>
+<h3 id="education-policy-and-law">Education Policy and Law</h3>
+<p>Examines legal mandates, constitutional rights, tort liability, ethics, and governance policies governing educational institutions.</p>
+<p><a href="https://books.google.com/books?isbn=9780133564464" target="_blank" rel="noopener noreferrer">Teachers and the Law by David Schimmel, Louis Fischer, Leslie R. Stellman, and Cynthia K. Conlon</a> - The essential practical textbook and casebook, covering student expression, teacher contracts, negligence, copyright, and due process.</p>
+<p><a href="https://www.coursera.org/learn/constitutional-law" target="_blank" rel="noopener noreferrer">Introduction to Key Constitutional Concepts and Supreme Court Cases (Coursera / University of Pennsylvania)</a> - A foundational legal course recommended prior to or alongside Schimmel et al. to establish the First and Fourteenth Amendment jurisprudence that governs public schooling.</p>
+    </article>
+  </main>
 
 </body>
 </html>

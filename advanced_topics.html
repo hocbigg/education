@@ -1,140 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Advanced Topics</title>
-<link rel="stylesheet" href="/education/style.css">
-<meta name="description" content="">
+  <title>Advanced Topics in Education</title>
+  <meta name="description" content="Advanced Topics in Education curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/education/">
+  <link rel="canonical" href="https://hocbigg.github.io/education/advanced_topics.html">
+  <meta property="og:title" content="Advanced Topics in Education">
+  <meta property="og:description" content="Advanced Topics in Education curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/education/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Advanced Topics">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/education/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/education/">Education</a>
-<a href="/education/advanced_topics.html">Advanced Topics</a>
-<a href="/education/projects.html">Projects</a>
-<a href="/education/extras/courses.html">Extra Courses</a>
-<a href="/education/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/education/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/education/">Education</a></li>
+      <li><a href="/education/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/education/projects.html">Projects</a></li>
+      <li><a href="/education/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/education/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/education" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
-<h1 id="advanced-topics">Advanced Topics</h1>
-<p>After finishing the core, review the two subsections and pick based on what appeals to you most:</p>
+  <main id="main-content">
+    <article>
+
+<h1 id="advanced-topics-in-education">Advanced Topics in Education</h1>
+<p>Having mastered the core undergraduate foundations of education, you can now specialize in advanced subdisciplines, methodologies, and systemic frameworks. Explore the specialization tracks below:</p>
 <ul>
-<li>Choose <strong>Design, Leadership, and Ethics</strong> if you are drawn to planning learning experiences, reflecting on teaching practice, or thinking about moral questions in schools.</li>
-<li>Choose <strong>Technology and Systems</strong> if you are interested in digital tools, online teaching, or seeing education as interconnected systems.</li>
+<li><strong>Learning Sciences and Advanced Instructional Design</strong>: Explores cognitive architecture, conceptual change mechanisms, and the systematic design of complex collaborative learning environments.</li>
+<li><strong>Advanced Psychometrics, Data Analytics, and Program Evaluation</strong>: Covers latent trait modeling, learning analytics, causal inference, and stakeholder-centered intervention evaluation.</li>
+<li><strong>Educational Leadership, Policy, and Improvement Science</strong>: Focuses on organizational reframing, continuous improvement inquiry, systemic change theory, and educational economics.</li>
+<li><strong>Critical Pedagogies, Language, and Inclusive Design</strong>: Examines liberatory classroom praxis, translanguaging repertoires, decolonial pedagogies, and disability studies in education.</li>
+<li><strong>Emerging Technologies, AI in Education, and Digital Literacies</strong>: Analyzes intelligent tutoring systems, game-based situated cognition, and critical examinations of educational platform capitalism.</li>
 </ul>
-<h2 id="research-evidence-and-evaluation">Research, Evidence, and Evaluation</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Research Methods</td>
-<td>It teaches how to investigate education questions systematically. You learn to collect and analyze data reliably. This builds skills to make evidence-based decisions in teaching.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://us.sagepub.com/en-us/nam/educational-research/book258879">Creswell – <em>Educational Research</em></a> (Publisher previews)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/qualitative-research-methods/">MIT OCW – Qualitative Methodology</a></td>
-</tr>
-<tr>
-<td>Measurement &amp; Evaluation</td>
-<td>It shows how to create and use tests that measure learning accurately. You gain tools to evaluate programs and student progress. This supports fair assessment and continuous improvement.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.aera.net/Publications/Books/Educational-Measurement-4th-Edition">Brennan – <em>Educational Measurement</em></a> (Association previews)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/research-design/">MIT OCW – Research Design</a></td>
-</tr>
-<tr>
-<td>Program Evaluation</td>
-<td>It provides ways to judge whether educational programs work well. You learn to assess effectiveness and suggest improvements. This helps you contribute to better school initiatives.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://us.sagepub.com/en-us/nam/practical-evaluation/book258880">Patton – <em>Evaluation</em></a> (Publisher previews)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.betterevaluation.org/">BetterEvaluation.org</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="design-leadership-and-ethics">Design, Leadership, and Ethics</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Curriculum Design</td>
-<td>It teaches how to plan backward from goals to create meaningful units. You gain a framework to design lessons and courses that promote deep understanding. This makes your teaching more intentional and effective.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.ascd.org/books/understanding-by-design">Wiggins &amp; McTighe – <em>Understanding by Design</em></a> (ASCD previews)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.ascd.org/webinars">ASCD Webinars</a></td>
-</tr>
-<tr>
-<td>Teacher Professional Practice</td>
-<td>It encourages ongoing reflection on your own teaching. You develop habits to learn from experience and grow professionally. This supports lifelong improvement as an educator.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/reflectivepracti0000scho">Schön – <em>Reflective Practitioner</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://teachingcommons.harvard.edu/">Harvard Teaching Commons</a></td>
-</tr>
-<tr>
-<td>Ethics in Education</td>
-<td>It explores moral questions in teaching and school decisions. You learn to handle dilemmas with fairness and care. This helps you act responsibly toward students and colleagues.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://us.sagepub.com/en-us/nam/ethics-and-education/book258881">Strike – <em>Ethics and Education</em></a> (Publisher previews)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://oyc.yale.edu/philosophy">Open Yale – Philosophy</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="technology-and-systems">Technology and Systems</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Why study?</th>
-<th>Book / Text</th>
-<th>Online Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Educational Technology</td>
-<td>It examines how digital tools can enhance or change learning. You gain knowledge to choose and use technology thoughtfully. This prepares you for modern classrooms.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.routledge.com/Learning-Technologies/Selwyn/p/book/9781138024328">Selwyn – <em>Learning Technologies</em></a> (Publisher previews)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.ucl.ac.uk/ioe/">UCL IOE Lectures</a></td>
-</tr>
-<tr>
-<td>Online &amp; Blended Learning</td>
-<td>It explains how to design effective digital and mixed courses. You learn principles of good online instruction. This helps you reach learners in flexible ways.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.wiley.com/en-us/E+Learning+and+the+Science+of+Instruction%3A+Proven+Guidelines+for+Consumers+and+Designers+of+Multimedia+Learning%2C+4th+Edition-p-9781119158660">Clark &amp; Mayer – <em>E-Learning and the Science of Instruction</em></a> (Publisher previews)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.open.edu/openlearn/">Open University</a></td>
-</tr>
-<tr>
-<td>Systems Thinking in Education</td>
-<td>It teaches how to see education as connected parts (people, policies, resources). You develop ways to understand and improve whole systems. This supports solving complex school challenges.</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://donellameadows.org/thinking-in-systems/">Meadows – <em>Thinking in Systems</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://donellameadows.org/">Donella Meadows Institute</a></td>
-</tr>
-</tbody>
-</table>
-</article>
-</main>
+<h2 id="learning-sciences-and-advanced-instructional-design">Learning Sciences and Advanced Instructional Design</h2>
+<p>Investigates advanced cognitive architecture, epistemic practices, and the engineering of complex, technology-mediated collaborative learning environments.</p>
+<p>Cognitive Load Theory and Multimedia Learning: <a href="https://books.google.com/books?isbn=9781108841580" target="_blank" rel="noopener noreferrer">The Cambridge Handbook of Multimedia Learning (Edited by Richard E. Mayer and Logan Fiorella)</a> - Synthesizes experimental research on human cognitive architecture, split-attention effects, and evidence-based design principles for digital educational media.</p>
+<p>Conceptual Change and Epistemic Beliefs: <a href="https://books.google.com/books?isbn=9780415898836" target="_blank" rel="noopener noreferrer">International Handbook of Research on Conceptual Change (Edited by Stella Vosniadou)</a> - Examines cognitive mechanisms, ontological category shifts, and pedagogical interventions required to restructure deeply held intuitive misconceptions.</p>
+<p>Complex Learning and Instructional Systems Design: <a href="https://books.google.com/books?isbn=9781032333113" target="_blank" rel="noopener noreferrer">Ten Steps to Complex Learning: A Systematic Approach to Four-Component Instructional Design (Jeroen J. G. van Merriënboer, Paul A. Kirschner, and Jimmy Frèrejean)</a> - Provides a holistic engineering framework (4C/ID) to design training for complex professional tasks, authentic problem-solving, and non-routine skill transfer.</p>
+<p>Computer-Supported Collaborative Learning and Scaffolding: <a href="https://books.google.com/books?isbn=9781108744669" target="_blank" rel="noopener noreferrer">The Cambridge Handbook of the Learning Sciences (Edited by R. Keith Sawyer)</a> - Integrates sociocultural theories, collaborative discourse analysis, and digital scaffolding environments that foster collective knowledge advancement.</p>
+<h2 id="advanced-psychometrics-data-analytics-and-program-evaluation">Advanced Psychometrics, Data Analytics, and Program Evaluation</h2>
+<p>Applies advanced mathematical modeling, computational trace analytics, and quasi-experimental evaluation methodologies to educational systems.</p>
+<p>Item Response Theory and Modern Measurement: <a href="https://books.google.com/books?isbn=9780805828191" target="_blank" rel="noopener noreferrer">Item Response Theory for Psychologists (Susan E. Embretson and Steven P. Reise)</a> - Details mathematical latent-trait models, item characteristic curves, parameter estimation, and differential item functioning in high-stakes testing.</p>
+<p>Educational Data Mining and Learning Analytics: <a href="https://www.solaresearch.org/publications/hla-22/" target="_blank" rel="noopener noreferrer">Handbook of Learning Analytics (Edited by Charles Lang, George Siemens, Alyssa Friend Wise, and Dragan Gašević / SoLAR)</a> - An open-access volume covering predictive modeling, multimodal analytics, temporal discourse analysis, and digital trace data interpretation.</p>
+<p>Causal Inference and Quasi-Experimental Design: <a href="https://books.google.com/books?isbn=9780199753864" target="_blank" rel="noopener noreferrer">Methods Matter: Improving Causal Inference in Educational and Social Science Research (Richard J. Murnane and John B. Willett)</a> - Explores regression discontinuity, instrumental variables, differences-in-differences, and randomized trials to establish causal impacts of educational interventions.</p>
+<p>Utilization-Focused Program Evaluation: <a href="https://books.google.com/books?isbn=9781544379456" target="_blank" rel="noopener noreferrer">Utilization-Focused Evaluation (Michael Quinn Patton and Charmagne E. Campbell-Patton)</a> - A comprehensive guide to structuring stakeholder-engaged evaluation designs that translate empirical findings into actionable institutional decisions.</p>
+<h2 id="educational-leadership-policy-and-improvement-science">Educational Leadership, Policy, and Improvement Science</h2>
+<p>Prepares education leaders to navigate organizational complexity, guide continuous improvement networks, and conduct rigorous policy analysis.</p>
+<p>Improvement Science and Networked Communities: <a href="https://books.google.com/books?isbn=9781612507910" target="_blank" rel="noopener noreferrer">Learning to Improve: How America's Schools Can Get Better at Getting Better (Anthony S. Bryk, Louis M. Gomez, Alicia Grunow, and Paul G. LeMahieu)</a> - Details disciplined inquiry, Plan-Do-Study-Act (PDSA) cycles, root-cause analysis, and collaborative practitioner networks to solve persistent systemic failures.</p>
+<p>Organizational Framing and Institutional Change: <a href="https://books.google.com/books?isbn=9781119756835" target="_blank" rel="noopener noreferrer">Reframing Organizations: Artistry, Choice, and Leadership (Lee G. Bolman and Terrence E. Deal)</a> - Applies structural, human resource, political, and symbolic frames to diagnose institutional inertia and steer educational leadership through systemic complexity.</p>
+<p>Systemic Educational Change and Reform: <a href="https://books.google.com/books?isbn=9780807756805" target="_blank" rel="noopener noreferrer">The New Meaning of Educational Change (Michael Fullan)</a> - Examines the cultural, psychological, and institutional dynamics of school reform across local, district, and national levels.</p>
+<p>Economics of Education and Policy Analysis: <a href="https://books.google.com/books?isbn=9780128153918" target="_blank" rel="noopener noreferrer">The Economics of Education: A Comprehensive Overview (Edited by Steve Bradley and Colin Green)</a> - Covers human capital theory, school finance equity, teacher labor economics, and market-based reforms like vouchers and charter schooling.</p>
+<h2 id="critical-pedagogies-language-and-inclusive-design">Critical Pedagogies, Language, and Inclusive Design</h2>
+<p>Interrogates structural oppression in schooling while equipping educators with liberatory, culturally sustaining, and radically inclusive pedagogical practices.</p>
+<p>Critical Pedagogy and Transformative Praxis: <a href="https://books.google.com/books?isbn=9780415908085" target="_blank" rel="noopener noreferrer">Teaching to Transgress: Education as the Practice of Freedom (bell hooks)</a> - Articulates an engaged, anti-oppressive pedagogy linking critical consciousness with feminist, anti-racist, and liberatory classroom community.</p>
+<p>Culturally Sustaining Pedagogies: <a href="https://books.google.com/books?isbn=9780807758335" target="_blank" rel="noopener noreferrer">Culturally Sustaining Pedagogies: Teaching and Learning for Justice in a Changing World (Edited by Django Paris and H. Samy Alim)</a> - Reframes schooling to actively sustain and foster linguistic, literate, and cultural pluralism across marginalized student communities.</p>
+<p>Translanguaging and Multilingual Education: <a href="https://books.google.com/books?isbn=9781137385758" target="_blank" rel="noopener noreferrer">Translanguaging: Language, Bilingualism and Education (Ofelia García and Li Wei)</a> - Challenges monolingual language hierarchies by demonstrating how multilingual students fluidly mobilize their full communicative repertoires for learning.</p>
+<p>Disability Studies in Education and Radical Inclusion: <a href="https://books.google.com/books?isbn=9781433125515" target="_blank" rel="noopener noreferrer">Practicing Disability Studies in Education: Acting Toward Social Change (Edited by David J. Connor, Jan W. Valle, and Chris Hale)</a> - Moves beyond deficit-oriented special education frameworks to conceptualize disability as a social, political, and cultural dimension of human diversity.</p>
+<h2 id="emerging-technologies-ai-in-education-and-digital-literacies">Emerging Technologies, AI in Education, and Digital Literacies</h2>
+<p>Examines the technical mechanics, cognitive affordances, and socio-political implications of emerging digital learning environments.</p>
+<p>Artificial Intelligence in Education and Intelligent Tutors: <a href="https://books.google.com/books?isbn=9781800375406" target="_blank" rel="noopener noreferrer">Handbook of Artificial Intelligence in Education (Edited by Benedict du Boulay, Antonija Mitrovic, and Kalina Yacef)</a> - Explores knowledge tracing algorithms, learner domain modeling, pedagogical dialogue systems, and generative AI applications.</p>
+<p>Game-Based Learning and Situated Cognition: <a href="https://books.google.com/books?isbn=9781403984531" target="_blank" rel="noopener noreferrer">What Video Games Have to Teach Us About Learning and Literacy (James Paul Gee)</a> - Analyzes semiotic domains, active critical learning principles, and identity construction within immersive game spaces.</p>
+<p>Critical EdTech and Educational Infrastructure: <a href="https://books.google.com/books?isbn=9780674089044" target="_blank" rel="noopener noreferrer">Failure to Disrupt: Why Technology Alone Can't Transform Education (Justin Reich)</a> - Analyzes why well-funded educational technologies routinely fail to deliver promised disruptions, highlighting systemic constraints on innovation.</p>
+<p>Critical EdTech and Educational Infrastructure: <a href="https://books.google.com/books?isbn=9781350145559" target="_blank" rel="noopener noreferrer">Education and Technology: Key Issues and Debates (Neil Selwyn)</a> - Investigates platform capitalism, corporate surveillance, and algorithmic accountability within computerized education systems.</p>
+    </article>
+  </main>
 
 </body>
 </html>

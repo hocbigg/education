@@ -1,109 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Projects</title>
-<link rel="stylesheet" href="/education/style.css">
-<meta name="description" content="">
+  <title>Projects</title>
+  <meta name="description" content="Projects curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/education/">
+  <link rel="canonical" href="https://hocbigg.github.io/education/projects.html">
+  <meta property="og:title" content="Projects">
+  <meta property="og:description" content="Projects curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/education/projects.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Projects">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/education/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/education/">Education</a>
-<a href="/education/advanced_topics.html">Advanced Topics</a>
-<a href="/education/projects.html">Projects</a>
-<a href="/education/extras/courses.html">Extra Courses</a>
-<a href="/education/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/education/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/education/">Education</a></li>
+      <li><a href="/education/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/education/projects.html">Projects</a></li>
+      <li><a href="/education/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/education/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/education" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="projects">Projects</h1>
-<p>This page is a curated collection of well-written, step-by-step guides for learning Education through hands-on, project-based practice.</p>
 <blockquote>
-<p><em>What I cannot create, I do not understand — Richard Feynman.</em></p>
+<p>"What I cannot create, I do not understand." — Richard Feynman</p>
 </blockquote>
-<p>These projects are meant to support learning throughout the curriculum, not only at the end.<br />
-By building, writing, creating, or reconstructing real artifacts in the field, learners develop practical understanding alongside theoretical study.</p>
-<h2 id="tutorials">Tutorials</h2>
 <ul>
-<li><a href="#build-your-own-curriculum">Curriculum</a></li>
-<li><a href="#design-your-own-lesson-plan">Lesson Plan</a></li>
-<li><a href="#construct-your-own-unit-plan">Unit Plan</a></li>
-<li><a href="#write-your-own-syllabus">Syllabus</a></li>
-<li><a href="#create-your-own-assessment">Assessment</a></li>
-<li><a href="#develop-your-own-rubric">Rubric</a></li>
-<li><a href="#formulate-your-own-learning-objective">Learning Objective</a></li>
-<li><a href="#build-your-own-educational-game">Educational Game</a></li>
-<li><a href="#write-your-own-teaching-case">Teaching Case</a></li>
-<li><a href="#assemble-your-own-instructional-module">Instructional Module</a></li>
-<li><a href="#design-your-own-workshop">Workshop</a></li>
+<li><a href="#design-your-own-lesson-plans">Lesson Plans</a></li>
+<li><a href="#design-your-own-curriculum-units">Curriculum Units</a></li>
+<li><a href="#build-your-own-course-syllabi">Course Syllabi</a></li>
+<li><a href="#construct-your-own-scoring-rubrics">Scoring Rubrics</a></li>
+<li><a href="#design-your-own-classroom-accommodations">Classroom Accommodations</a></li>
+<li><a href="#create-your-own-behavior-support-plans">Behavior Support Plans</a></li>
+<li><a href="#run-your-own-program-evaluations">Program Evaluations</a></li>
+<li><a href="#conduct-your-own-action-research-studies">Action Research Studies</a></li>
+<li><a href="#write-your-own-policy-briefs">Policy Briefs</a></li>
+<li><a href="#write-your-own-teaching-case-studies">Teaching Case Studies</a></li>
+<li><a href="#design-your-own-interactive-workshops">Interactive Workshops</a></li>
 </ul>
-<h3 id="build-your-own-curriculum">Build your own curriculum</h3>
+<h2 id="design-your-own-lesson-plans">Design your own lesson plans</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://medium.com/swlh/a-free-coding-curriculum-for-beginners-5f16c948e7b4">A Free Coding Curriculum for Beginners</a> (<em>Medium guide</em>)  </li>
+<li><a href="https://crlt.umich.edu/gsis/p2_5" target="_blank" rel="noopener noreferrer">Strategies for Effective Lesson Planning (Center for Research on Learning and Teaching / University of Michigan)</a></li>
+<li><a href="https://lincs.ed.gov/state-resources/federal-initiatives/teal/guide/lessonplanning" target="_blank" rel="noopener noreferrer">TEAL Center Fact Sheet No. 8: Effective Lesson Planning (LINCS / U.S. Department of Education)</a></li>
+<li><a href="https://tips.uark.edu/using-blooms-taxonomy/" target="_blank" rel="noopener noreferrer">Using Bloom's Taxonomy to Write Effective Learning Objectives (Teaching Innovation and Pedagogical Support / University of Arkansas)</a></li>
+<li><a href="https://www.cmu.edu/teaching/assessment/basics/alignment.html" target="_blank" rel="noopener noreferrer">Aligning Assessments, Objectives, and Instructional Strategies (Eberly Center / Carnegie Mellon University)</a></li>
 </ul>
-<h3 id="design-your-own-lesson-plan">Design your own lesson plan</h3>
+<h2 id="design-your-own-curriculum-units">Design your own curriculum units</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://crlt.umich.edu/gsis/p2_5">Strategies for Effective Lesson Planning</a> (<em>University step-by-step guide</em>)  </li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.hmhco.com/blog/how-to-create-a-lesson-plan">How to Create a Lesson Plan</a> (<em>Step-by-step tutorial</em>)  </li>
+<li><a href="https://cft.vanderbilt.edu/understanding-by-design/" target="_blank" rel="noopener noreferrer">Understanding by Design (UbD) Backward Design Framework and Unit Template (Center for Teaching / Vanderbilt University)</a></li>
 </ul>
-<h3 id="construct-your-own-unit-plan">Construct your own unit plan</h3>
+<h2 id="build-your-own-course-syllabi">Build your own course syllabi</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://engineerdoeseducation.com/episode-39">How To Unit Plan in Simple Steps</a> (<em>Podcast/transcript guide</em>)  </li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://theliteracyeffect.com/2024/06/26/how-to-make-a-teaching-unit-plan">How to Make a Teaching Unit Plan</a> (<em>Step-by-step process</em>)  </li>
+<li><a href="https://teaching.cornell.edu/teaching-resources/preparing-teach/designing-your-course/write-course-syllabus" target="_blank" rel="noopener noreferrer">Create a Student-Centered Course Syllabus (Center for Teaching Innovation / Cornell University)</a></li>
+<li><a href="https://www.cmu.edu/teaching/designteach/design/" target="_blank" rel="noopener noreferrer">Course Design Process: Content and Schedule Architecture (Eberly Center / Carnegie Mellon University)</a></li>
 </ul>
-<h3 id="write-your-own-syllabus">Write your own syllabus</h3>
+<h2 id="construct-your-own-scoring-rubrics">Construct your own scoring rubrics</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://teaching.cornell.edu/teaching-resources/preparing-teach/designing-your-course/write-course-syllabus">Write a Course Syllabus</a> (<em>University template + guide</em>)  </li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://tophat.com/blog/syllabus-template">Ultimate Guide to Creating a Course Syllabus</a> (<em>Comprehensive tutorial</em>)  </li>
+<li><a href="https://teaching-resources.delta.ncsu.edu/rubric_best-practices-examples-templates/" target="_blank" rel="noopener noreferrer">Rubric Best Practices, Examples, and Templates (DELTA / NC State University)</a></li>
+<li><a href="https://teaching.cornell.edu/teaching-resources/assessment-evaluation/using-rubrics" target="_blank" rel="noopener noreferrer">Using Rubrics for Formative and Summative Grading (Center for Teaching Innovation / Cornell University)</a></li>
+<li><a href="https://www.aacu.org/initiatives/value-initiative/value-rubrics" target="_blank" rel="noopener noreferrer">VALUE Rubrics for Authentic Assessment (Association of American Colleges and Universities)</a></li>
 </ul>
-<h3 id="create-your-own-assessment">Create your own assessment</h3>
+<h2 id="design-your-own-classroom-accommodations">Design your own classroom accommodations</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.ascd.org/blogs/how-to-create-assessments-that-drive-learning">How to Create Assessments that Drive Learning</a> (<em>Actionable cycle guide</em>)  </li>
+<li><a href="https://udlguidelines.cast.org/" target="_blank" rel="noopener noreferrer">Universal Design for Learning Guidelines and Educator Checklists (CAST)</a></li>
+<li><a href="https://iris.peabody.vanderbilt.edu/module/acc/" target="_blank" rel="noopener noreferrer">Accommodations: Instructional and Testing Supports for Students with Disabilities (The IRIS Center / Vanderbilt University)</a></li>
 </ul>
-<h3 id="develop-your-own-rubric">Develop your own rubric</h3>
+<h2 id="create-your-own-behavior-support-plans">Create your own behavior support plans</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://teaching-resources.delta.ncsu.edu/rubric_best-practices-examples-templates">Rubric Best Practices, Examples, and Templates</a> (<em>Step-by-step creation guide with examples</em>) – Useful substitute: Provides clear procedural steps for building rubrics from assignment analysis to final design.  </li>
+<li><a href="https://iris.peabody.vanderbilt.edu/module/bi1/" target="_blank" rel="noopener noreferrer">Addressing Challenging Behaviors: Understanding the Acting-Out Cycle (The IRIS Center / Vanderbilt University)</a></li>
 </ul>
-<h3 id="formulate-your-own-learning-objective">Formulate your own learning objective</h3>
+<h2 id="run-your-own-program-evaluations">Run your own program evaluations</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://tips.uark.edu/using-blooms-taxonomy">Using Bloom's Taxonomy to Write Effective Learning Objectives</a> (<em>Method guide with verbs and steps</em>) – Useful substitute: Offers structured process using Bloom's levels to craft measurable objectives.  </li>
+<li><a href="https://www.betterevaluation.org/frameworks-guides/rainbow-framework" target="_blank" rel="noopener noreferrer">The Rainbow Framework: Step-by-Step Evaluation Tasks and Methods (BetterEvaluation)</a></li>
+<li><a href="https://www.cdc.gov/evaluation/php/evaluation-framework/index.html" target="_blank" rel="noopener noreferrer">CDC Program Evaluation Framework and Step-by-Step Action Guide (Centers for Disease Control and Prevention)</a></li>
 </ul>
-<h3 id="build-your-own-educational-game">Build your own educational game</h3>
+<h2 id="conduct-your-own-action-research-studies">Conduct your own action research studies</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.titaniumtutors.co.uk/post/designing-educational-board-game">4 Simple Steps To Designing Your Own Educational Board Game</a> (<em>Step-by-step process guide</em>)</li>
+<li><a href="https://kstatelibraries.pressbooks.pub/gradactionresearch/" target="_blank" rel="noopener noreferrer">Action Research: A Guide for Associate and Classroom Teachers (J. Spencer Clark et al. / Kansas State University Libraries)</a></li>
+<li><a href="https://www.open.edu/openlearn/education-development/learning-teach-introduction-classroom-research/content-section-0" target="_blank" rel="noopener noreferrer">Learning to Teach: An Introduction to Classroom Research (OpenLearn / The Open University)</a></li>
 </ul>
-<h3 id="write-your-own-teaching-case">Write your own teaching case</h3>
+<h2 id="write-your-own-policy-briefs">Write your own policy briefs</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.emeraldgrouppublishing.com/how-to/authoring-editing-reviewing/write-a-teaching-case-study">Write a teaching case study</a> (<em>Publisher authoring guide</em>)</li>
+<li><a href="https://writingcenter.unc.edu/tips-and-tools/policy-briefs/" target="_blank" rel="noopener noreferrer">How to Write a Policy Brief: Structure, Guidelines, and Annotated Examples (The Writing Center / University of North Carolina at Chapel Hill)</a></li>
+<li><a href="https://idrc-crdi.ca/en/funding/resources-idrc-grantees/how-write-policy-brief" target="_blank" rel="noopener noreferrer">How to Write a Policy Brief: A Guide for Researchers (International Development Research Centre)</a></li>
 </ul>
-<h3 id="assemble-your-own-instructional-module">Assemble your own instructional module</h3>
+<h2 id="write-your-own-teaching-case-studies">Write your own teaching case studies</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.learndash.com/blog/9-step-instructional-process-that-just-works">A Step-By-Step Guide To The Instructional Design Process</a> (<em>Procedural instructional design framework</em>)</li>
+<li><a href="https://www.emeraldgrouppublishing.com/how-to/authoring-editing-reviewing/write-a-teaching-case-study" target="_blank" rel="noopener noreferrer">Write a Teaching Case Study and Teaching Note (Emerald Publishing)</a></li>
 </ul>
-<h3 id="design-your-own-workshop">Design your own workshop</h3>
+<h2 id="design-your-own-interactive-workshops">Design your own interactive workshops</h2>
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.sessionlab.com/blog/planning-a-workshop">A step-by-step guide to planning a workshop</a> (<em>Comprehensive planning walkthrough</em>)</li>
+<li><a href="https://www.sessionlab.com/blog/planning-a-workshop/" target="_blank" rel="noopener noreferrer">A Step-by-Step Guide to Planning a Workshop (SessionLab)</a></li>
+<li><a href="https://cft.vanderbilt.edu/guides-sub-pages/active-learning/" target="_blank" rel="noopener noreferrer">Active Learning Strategies and Classroom Techniques (Center for Teaching / Vanderbilt University)</a></li>
+<li><a href="https://tsl.mit.edu/practice-spaces/" target="_blank" rel="noopener noreferrer">Teacher Practice Spaces and Classroom Simulations (Teaching Systems Lab / MIT)</a></li>
 </ul>
-</article>
-</main>
+    </article>
+  </main>
 
 </body>
 </html>
