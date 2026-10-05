@@ -15,6 +15,8 @@ This curated collection features standout university lecture series, full-length
 - [Leaders of Learning (HarvardX / Harvard Graduate School of Education / Richard Elmore)](https://www.edx.org/course/leaders-of-learning)
 - [Introduction to Data Wise: A Collaborative Process to Improve Learning & Teaching (HarvardX / Harvard GSE / Kathryn Parker Boudett)](https://www.edx.org/course/introduction-to-data-wise-a-collaborative-process-to-improve-learning-teaching)
 - [Launching Innovation in Schools (MITx / MIT Teaching Systems Lab / Justin Reich & Peter Senge)](https://www.edx.org/course/launching-innovation-in-schools)
+- [How to Become a Principal (EducatorPathways)](https://educatorpathways.com/guides/how-to-become-a-principal) - Free, state-oriented sequence for building-level leadership credentials (complements Leaders of Learning / Data Wise above).
+- [M.Ed. vs EdS vs EdD (EducatorPathways)](https://educatorpathways.com/guides/med-vs-eds-vs-edd) - Free comparison of graduate awards versus school leadership licensure.
 
 ## Curriculum Design, Educational Policy & Foundations
 
